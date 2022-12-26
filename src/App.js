@@ -1,14 +1,11 @@
-import ActivitySlider from "./Components/ActivitySlider/ActivitySlider";
+import React from 'react';
 import './App.css'
-import PartnerSlider from "./Components/PartnerSlider/PartnerSlider";
-import BlogSlider from "./Components/BlogSlider/BlogSlider";
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <>
-      <ActivitySlider />
-      <PartnerSlider />
-      <BlogSlider />
+      <Home />
     </>
   );
 }

@@ -38,9 +38,9 @@ const ActivitySlider = () => {
             >
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
-                            <img src={portfolio1} alt="" />
+                            <img className='w-full h-full' src={portfolio1} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to='/portfolio/winter-clothes-distribution/'>Winter clothes distribution <br />-2022</Link>
@@ -50,9 +50,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
-                            <img src={portfolio2} alt="" />
+                            <img className='w-full h-full' src={portfolio2} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/">Distribute relief to cyclone Roanu affected coastal people</Link>
@@ -62,9 +62,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
-                            <img src={portfolio3} alt="" />
+                            <img className='w-full h-full' src={portfolio3} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/they-read-they-build/">পড়বে ওরা,গড়বে দেশ (They Read, They Build)</Link>
@@ -74,9 +74,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
-                            <img src={portfolio4} alt="" />
+                            <img className='w-full h-full' src={portfolio4} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/">Health Camp, Medicine &amp; Educational Equipment For Flood Victim children</Link>
@@ -86,9 +86,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Portfolio</span>
-                            <img src={portfolio5} alt="" />
+                            <img className='w-full h-full' src={portfolio5} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/application-mobile/">Application mobile</Link>
@@ -98,9 +98,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
-                            <img src={portfolio6} alt="" />
+                            <img className='w-full h-full' src={portfolio6} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/business-card/">Business card</Link>
@@ -110,9 +110,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
-                            <img src={portfolio7} alt="" />
+                            <img className='w-full h-full' src={portfolio7} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/mobile-weather-app/">Mobile Weather App</Link>
@@ -122,9 +122,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Awareness</span>
-                            <img src={portfolio8} alt="" />
+                            <img className='w-full h-full' src={portfolio8} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/lowpoly-social/">LowPoly Social</Link>
@@ -134,9 +134,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
-                            <img src={portfolio9} alt="" />
+                            <img className='w-full h-full' src={portfolio9} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/special-bikes/">Special bikes</Link>
@@ -146,9 +146,9 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left'>
-                        <div className='mb-2'>
+                        <div className='mb-2 w-[300px] h-[230px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
-                            <img src={portfolio10} alt="" />
+                            <img className='w-full h-full' src={portfolio10} alt="" />
                         </div>
                         <div>
                             <Link className='font-semibold mb-2 font-sans' to="/portfolio/moderats-eloquenti/">Moderats eloquenti</Link>

@@ -28,7 +28,9 @@ const BlogSlider = () => {
             <Slider data={data}>
                 <SwiperSlide>
                     <div className='border w-[370px] h-[580px] hover:shadow-lg mb-10'>
-                        <img className='hover:scale-125 duration-1000' src={blog1} alt="" />
+                        <div className='w-[370px] h-[260px] overflow-hidden'>
+                            <img className='hover:scale-125 duration-1000' src={blog1} alt="" />
+                        </div>
                         <div className='px-8 pt-3 pb-8'>
                             <p className='text-[#888888] text-base mb-2'>Announcement,DLSH <span className='text-[#0097FA] text-3xl'>-</span> March 1,2022</p>
                             <Link className='font-bold text-lg' to="2022/01/31/donate-love-spread-happiness-2022/">Donate Love, Spread Happiness 2022</Link>
@@ -38,7 +40,9 @@ const BlogSlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='border w-[370px] h-[580px] hover:shadow-lg'>
-                        <img className='hover:scale-125 duration-1000' src={blog2} alt="" />
+                        <div className='w-[370px] h-[260px] overflow-hidden'>
+                            <img className='hover:scale-125 duration-1000' src={blog2} alt="" />
+                        </div>
                         <div className='px-8 pt-3 pb-8'>
                             <p className='text-[#888888] text-base mb-2'>Announcement,DLSH <span className='text-[#0097FA] text-3xl'>-</span> March 1,2022</p>
                             <Link className='font-bold text-lg' to="/2022/03/01/dlsh2022/">ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন</Link>
@@ -48,7 +52,9 @@ const BlogSlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='border w-[370px] h-[580px] hover:shadow-lg'>
-                        <img className='hover:scale-125 duration-1000' src={blog1} alt="" />
+                        <div className='w-[370px] h-[260px] overflow-hidden'>
+                            <img className='hover:scale-125 duration-1000' src={blog1} alt="" />
+                        </div>
                         <div className='px-8 pt-3 pb-8'>
                             <p className='text-[#888888] text-base mb-2'>Announcement,DLSH <span className='text-[#0097FA] text-3xl'>-</span> March 1,2022</p>
                             <Link className='font-bold text-lg' to="2022/01/31/donate-love-spread-happiness-2022/">Donate Love, Spread Happiness 2022</Link>
@@ -58,7 +64,9 @@ const BlogSlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='border w-[370px] h-[580px] hover:shadow-lg'>
-                        <img className='hover:scale-125 duration-1000' src={blog2} alt="" />
+                        <div className='w-[370px] h-[260px] overflow-hidden'>
+                            <img className='hover:scale-125 duration-1000' src={blog2} alt="" />
+                        </div>
                         <div className='px-8 pt-3 pb-8'>
                             <p className='text-[#888888] text-base mb-2'>Announcement,DLSH <span className='text-[#0097FA] text-3xl'>-</span> March 1,2022</p>
                             <Link className='font-bold text-lg' to="/2022/03/01/dlsh2022/">ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন</Link>
