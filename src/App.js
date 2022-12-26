@@ -1,11 +1,11 @@
-import './App.css';
-import Slider from './Components/Slider/Slider';
+import ActivitySlider from "./Components/ActivitySlider/ActivitySlider";
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <Slider />
-    </div>
+    <>
+      <ActivitySlider />
+    </>
   );
 }
 
