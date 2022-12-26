@@ -158,7 +158,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
             </Slider>
             <div className='flex items-center flex-col'>
-                <p className='text-lg text-center my-10'>Please find below our development projects.</p>
+                <p className='text-lg text-center mt-10 mb-3'>Please find below our development projects.</p>
                 <PrimaryButton>View All<MdOutlineArrowRightAlt className='text-2xl ml-2' /></PrimaryButton>
             </div>
         </div >

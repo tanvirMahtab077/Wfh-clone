@@ -35,7 +35,7 @@ const Slider = ({ children, data }) => {
                     spaceBetween: 10,
                 },
                 "@1.50": {
-                    slidesPerView: 4,
+                    slidesPerView: data.slidesPerView,
                     spaceBetween: 10,
                 },
             }}

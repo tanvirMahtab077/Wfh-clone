@@ -52,7 +52,7 @@ const PartnerSlider = () => {
                 </SwiperSlide>
             </Slider>
             <div className='flex items-center flex-col'>
-                <p className='text-lg text-center my-10'>When we are alone we can do so little; <br />
+                <p className='text-lg text-center mt-10 mb-3'>When we are alone we can do so little; <br />
                     But together we can do so much.</p>
                 <PrimaryButton>Be a Partner<MdOutlineArrowRightAlt className='text-2xl ml-2' /></PrimaryButton>
             </div>
