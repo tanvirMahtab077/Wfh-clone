@@ -27,11 +27,11 @@ const Slider = ({ children, data }) => {
                     spaceBetween: 10,
                 },
                 "@0.75": {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 10,
                 },
                 "@1.00": {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                 },
                 "@1.50": {

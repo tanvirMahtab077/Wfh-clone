@@ -12,17 +12,19 @@ import portfolio9 from '../../Assests/Imgs/portfolio-9.jpg'
 import portfolio10 from '../../Assests/Imgs/portfolio-10.jpg'
 import { SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import { MdOutlineArrowRightAlt } from 'react-icons/md'
 const ActivitySlider = () => {
     const data = {
         navigation: true,
         pagination: true,
-        autoplay: false,
+        autoplay: true,
         slidesPerView: 4
     }
     return (
-        <div className='mx-40 my-20'>
-            <div className='flex items-center justify-between mb-20'>
-                <div className='flex items-center'>
+        <div className='mx-3 lg:mx-40 my-20'>
+            <div className='lg:flex items-center lg:justify-between mb-20'>
+                <div className='flex items-center mb-5 md:mb-0'>
                     <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-7  bg-[#0097FA] mr-5'></span>
                     <div>
                         <h1 className='text-[#0097FA] text-lg font-semibold'>Joining Hands To Help The World’s</h1>
@@ -155,8 +157,11 @@ const ActivitySlider = () => {
                     </div>
                 </SwiperSlide>
             </Slider>
-            <p className='text-lg text-center mt-10'>Please find below our development projects.</p>
-        </div>
+            <div className='flex items-center flex-col'>
+                <p className='text-lg text-center my-10'>Please find below our development projects.</p>
+                <PrimaryButton>View All<MdOutlineArrowRightAlt className='text-2xl ml-2' /></PrimaryButton>
+            </div>
+        </div >
     );
 };
 
