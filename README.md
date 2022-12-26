@@ -1,6 +1,5 @@
 # Basic Git Command
 
-
 1. Creating a branch -  git branch <branch-name>
 2. Creating a branch and auto checkout to this branch -  git checkout -b <branch-name>
 3. See untracked files -  git status
@@ -9,7 +8,6 @@
 6. For commit -  git commit -m “your commit descriptions”
 7. For pushing the committed code -  git push origin <branch-name>
 8. Delete a Branch -  git branch -d <localBranchName>
-
 
 
 # Getting Started with Create React App
