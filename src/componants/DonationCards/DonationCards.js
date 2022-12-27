@@ -5,7 +5,7 @@ import './DonationCards.css';
 const DonationCards = () => {
    const donations=[
         {
-            id:1, img: ' https://i.ibb.co/d0ZYrZq/img1.jpg', name:'Who We Are', description:'WFH Foundation, a non-profit organization in Bangladesh which is working to make Bangladesh better.', btn:'Read More'
+            id:1, img: ' https://i.ibb.co/d0ZYrZq/img1.jpg', name:'Who We Are', description:'WFH Foundation, a non-profit organization in Bangladesh which is working to make Bangladesh better.', btn:'REAd MORE'
         },
         {
             id:2, img: 'https://i.ibb.co/dJGVT9B/img2.jpg', name:'What We Do', description:'We work for the backward sections of the society in Bangladesh through fundamental development', btn:'OUR WORKS'
