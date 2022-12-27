@@ -23,6 +23,16 @@ module.exports = {
         primary: "#0097FA",
         secondary: "#484848",
       },
+      keyframes: {
+        popUpY: {
+          "0%": { opacity: "0", transform: "translateY(10%)" },
+          "100%": { opacity: "1", transform: "translateY(0%)" },
+        },
+        popDownY: {
+          "0%": { opacity: "0", transform: "translateY(-20%)" },
+          "100%": { opacity: "1", transform: "translateY(0%)" },
+        },
+      },
     },
   },
   plugins: [],
