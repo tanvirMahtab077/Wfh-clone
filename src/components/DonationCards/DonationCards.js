@@ -1,6 +1,6 @@
 import React from 'react';
 import DonationCard from '../DonationCard/DonationCard';
-import './DonationCards.css';
+import '../DonationCards/DonationCards.css';
 
 const DonationCards = () => {
    const donations=[

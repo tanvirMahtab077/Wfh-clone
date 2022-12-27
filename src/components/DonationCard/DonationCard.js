@@ -1,6 +1,6 @@
 import React from 'react';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
-import './DonationCard.css';
+import '../DonationCard/DonationCard.css';
 import {FaLongArrowAltRight} from "react-icons/fa";
 import { FaBeer,  } from "@react-icons/all-files/fa/FaBeer";
 

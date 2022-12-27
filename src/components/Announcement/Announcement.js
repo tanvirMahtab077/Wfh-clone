@@ -1,5 +1,5 @@
 import React from 'react';
-import './Announcement.css'
+import '../Announcement/Announcement.css'
 import love from '../../image/loveimg.jpg';
 
 const Announcement = () => {
