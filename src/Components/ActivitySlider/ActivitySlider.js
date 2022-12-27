@@ -38,7 +38,7 @@ const ActivitySlider = () => {
             >
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
                             <img className='w-full h-full' src={portfolio1} alt="" />
                         </div>
@@ -50,7 +50,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
                             <img className='w-full h-full' src={portfolio2} alt="" />
                         </div>
@@ -62,7 +62,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
                             <img className='w-full h-full' src={portfolio3} alt="" />
                         </div>
@@ -74,7 +74,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
                             <img className='w-full h-full' src={portfolio4} alt="" />
                         </div>
@@ -86,7 +86,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Portfolio</span>
                             <img className='w-full h-full' src={portfolio5} alt="" />
                         </div>
@@ -98,7 +98,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
                             <img className='w-full h-full' src={portfolio6} alt="" />
                         </div>
@@ -110,7 +110,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
                             <img className='w-full h-full' src={portfolio7} alt="" />
                         </div>
@@ -122,7 +122,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Awareness</span>
                             <img className='w-full h-full' src={portfolio8} alt="" />
                         </div>
@@ -134,7 +134,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
                             <img className='w-full h-full' src={portfolio9} alt="" />
                         </div>
@@ -146,7 +146,7 @@ const ActivitySlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full'>
+                        <div className='mb-2 w-full h-[220px]'>
                             <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
                             <img className='w-full h-full' src={portfolio10} alt="" />
                         </div>
