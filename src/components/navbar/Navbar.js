@@ -7,6 +7,7 @@ import { CgClose } from "react-icons/cg";
 import Image from "../layouts/image/Image";
 import NavItem from "../navItem/NavItem";
 import DropdownBox from "../dropdownBox/DropdownBox";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -46,9 +47,9 @@ const Navbar = () => {
             />
           )}
           <div className="w-1/2 lg:w-1/5 flex justify-center lg:justify-start items-center ml-[20vw] lg:ml-0">
-            <a href="#">
+            <Link to="/">
               <Image src={"assets/images/logo.png"} />
-            </a>
+            </Link>
           </div>
           <div className="lg:w-4/5 flex justify-end">
             <form className="relative inline-block lg:mr-14 flex lg:block justify-end">
