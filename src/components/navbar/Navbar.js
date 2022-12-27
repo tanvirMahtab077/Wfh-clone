@@ -37,12 +37,12 @@ const Navbar = () => {
         >
           {hamOpen ? (
             <VscThreeBars
-              className="lg:hidden text-blueTxt text-2xl md:text-3xl cursor-pointer z-20"
+              className="lg:hidden text-blueTxt text-3xl ml-1 md:text-3xl cursor-pointer z-20"
               onClick={handleNavItems}
             />
           ) : (
             <CgClose
-              className="text-blueTxt lg:hidden text-2xl md:text-3xl font-bold cursor-pointer z-20"
+              className="text-blueTxt lg:hidden text-3xl ml-1 md:text-3xl font-bold cursor-pointer z-20"
               onClick={handleNavItems}
             />
           )}
@@ -74,11 +74,11 @@ const Navbar = () => {
           open
             ? "animate-[slideX_.4s_ease_1] lg:!animate-none"
             : "translate-x-[-100%] lg:translate-x-[0%]"
-        } bg-white lg:bg-primary w-[50vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:static top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-10 pt-11 lg:pt-0`}
+        } bg-white lg:bg-primary w-[60vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:static top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-10 pt-11 lg:pt-0`}
       >
         <div className="lg:max-w-container mx-auto flex flex-col lg:flex-row px-3 xl:px-0 relative">
-          <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0 ">
-            <ul className="lg:h-[5vw] cursor-pointer list-none flex flex-col lg:flex-row items-start lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
+          <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0">
+            <ul className="lg:h-[4.8vw] cursor-pointer list-none flex flex-col lg:flex-row items-start lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
               <NavItem href={"#"} linkName={"HOME"} className={""} />
               <NavItem
                 href={"#"}
@@ -267,7 +267,7 @@ const Navbar = () => {
               <NavItem href={"#"} linkName={"CONTACT"} className={""} />
             </ul>
             <Button
-              className="lg:h-full flex items-center justify-center text-center text-base px-2 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt w-[18vw] lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
+              className="lg:h-full w-[35vw] lg:flex items-center justify-center text-center text-base px-3 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt w-[18vw] lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
               btnText="Donate Now"
             />
           </div>
