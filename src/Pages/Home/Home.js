@@ -1,7 +1,7 @@
 import React from 'react';
-import ActivitySlider from "../../Components/ActivitySlider/ActivitySlider";
-import PartnerSlider from "../../Components/PartnerSlider/PartnerSlider";
-import BlogSlider from "../../Components/BlogSlider/BlogSlider";
+import ActivitySlider from "../../components/ActivitySlider/ActivitySlider";
+import PartnerSlider from "../../components/PartnerSlider/PartnerSlider";
+import BlogSlider from "../../components/BlogSlider/BlogSlider";
 
 
 const Home = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroBanner from '../../Components/HeroBanner/HeroBanner';
-import ProjectCard from '../../Components/ProjectCard/ProjectCard';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import portfolio1 from '../../Assests/Imgs/portfolio-3.jpg'
 import portfolio2 from '../../Assests/Imgs/portfolio-6.jpg'
-import SideStat from '../../Components/SideStat/SideStat';
+import SideStat from '../../components/SideStat/SideStat';
 
 const EducationProgram = () => {
     const header = 'Education Program'

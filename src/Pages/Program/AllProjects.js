@@ -9,8 +9,8 @@ import portfolio7 from '../../Assests/Imgs/portfolio-7.jpg'
 import portfolio8 from '../../Assests/Imgs/portfolio-8.jpg'
 import portfolio9 from '../../Assests/Imgs/portfolio-9.jpg'
 import portfolio10 from '../../Assests/Imgs/portfolio-10.jpg'
-import ProjectCard from '../../Components/ProjectCard/ProjectCard';
-import HeroBanner from '../../Components/HeroBanner/HeroBanner';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
 
 const AllProjects = () => {
     const portfolio = {
