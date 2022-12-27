@@ -13,21 +13,10 @@ const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(true);
   const [searchFocus, setSearchFocus] = useState(false);
 
-  const navRef = useRef(null);
-  const navTogglerRef = useRef(null);
-  const navCloserRef = useRef(null);
-
   const handleNavItems = () => {
     setOpen(!open);
     setHamOpen(!hamOpen);
   };
-
-  // const handleClickOutside = (e) => {
-  //   if (!navRef.current.contains(e.target)) {
-  //     setOpen(false);
-  //     setHamOpen(true);
-  //   }
-  // };
 
   useEffect(() => {
     window.innerWidth >= 1024 && setOpen(true);
@@ -35,8 +24,6 @@ const Navbar = () => {
       window.innerWidth >= 1024 ? setOpen(true) : setOpen(false);
     };
     window.addEventListener("resize", screenResize);
-
-    // document.addEventListener("click", handleClickOutside);
   }, []);
 
   return (
@@ -51,13 +38,11 @@ const Navbar = () => {
             <VscThreeBars
               className="lg:hidden text-blueTxt text-2xl md:text-3xl cursor-pointer z-20"
               onClick={handleNavItems}
-              ref={navTogglerRef}
             />
           ) : (
             <CgClose
               className="text-blueTxt lg:hidden text-2xl md:text-3xl font-bold cursor-pointer z-20"
               onClick={handleNavItems}
-              ref={navCloserRef}
             />
           )}
           <div className="w-1/2 lg:w-1/5 flex justify-center lg:justify-start items-center ml-[20vw] lg:ml-0">
@@ -85,207 +70,206 @@ const Navbar = () => {
 
       <nav
         className={`${
-          open ? "block" : "hidden"
-        } lg:bg-primary w-[50vw] md:w-[33vw] lg:w-auto h-screen fixed top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg animate-[slideX_.4s_ease_1]`}
-        ref={navRef}
+          open
+            ? "animate-[slideX_.4s_ease_1] lg:!animate-none"
+            : "translate-x-[-100%] lg:translate-x-[0%]"
+        } bg-white lg:bg-primary w-[50vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:static top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-10 pt-11 lg:pt-0`}
       >
         <div className="lg:max-w-container mx-auto flex flex-col lg:flex-row px-3 xl:px-0 relative">
-          {open && (
-            <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0 ">
-              <ul className="lg:h-[5vw] cursor-pointer list-none flex flex-col lg:flex-row items-center lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
-                <NavItem href={"#"} linkName={"HOME"} className={""} />
-                <NavItem
-                  href={"#"}
-                  linkName={"ABOUT US"}
-                  className={""}
-                  Arrow={IoIosArrowDown}
-                >
-                  <DropdownBox>
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Mission"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Vision"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Partners"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Reach & Presence"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Awards & Prizes"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Press & Media"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"FAQ"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
-                      }
-                      linkName={"Who We Are"}
-                      linkClass={"after:hidden"}
-                    />
-                  </DropdownBox>
-                </NavItem>
-                <NavItem
-                  href={"#"}
-                  linkName={"PROGRAM"}
-                  className={""}
-                  Arrow={IoIosArrowDown}
-                >
-                  <DropdownBox>
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"All Projects"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Education Program "}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Health Program "}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Awareness Program "}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Emergency Response"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Project Tribeni"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
-                      }
-                      linkName={"DLSH"}
-                      linkClass={"after:hidden"}
-                    />
-                  </DropdownBox>
-                </NavItem>
-                <NavItem
-                  href={"#"}
-                  linkName={"GET INVOLVED"}
-                  className={""}
-                  Arrow={IoIosArrowDown}
-                >
-                  <DropdownBox>
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Make A Donation"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Be A Volunteer"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Be A Media Representative"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
-                      }
-                      linkName={"Be A Sponsor Or Partner"}
-                      linkClass={"after:hidden"}
-                    />
-                  </DropdownBox>
-                </NavItem>
-                <NavItem
-                  href={"#"}
-                  linkName={"TEAM"}
-                  className={""}
-                  Arrow={IoIosArrowDown}
-                >
-                  <DropdownBox>
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
-                      }
-                      linkName={"Volunteers"}
-                      linkClass={"after:hidden"}
-                    />
-                    <NavItem
-                      className={
-                        "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
-                      }
-                      linkName={"Campus Ambassador"}
-                      linkClass={"after:hidden"}
-                    />
-                  </DropdownBox>
-                </NavItem>
-                <NavItem href={"#"} linkName={"WFH BLOG"} className={""} />
-                <NavItem href={"#"} linkName={"CONTACT"} className={""} />
-              </ul>
-              <Button
-                className="h-full flex items-center justify-center text-center text-base px-3 lg:px-6 py-2 lg:py-0 bg-white lg:text-blueTxt/70 hover:text-blueTxt w-[18vw] lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0"
-                btnText="Donate Now"
-              />
-            </div>
-          )}
+          <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0 ">
+            <ul className="lg:h-[5vw] cursor-pointer list-none flex flex-col lg:flex-row items-start lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
+              <NavItem href={"#"} linkName={"HOME"} className={""} />
+              <NavItem
+                href={"#"}
+                linkName={"ABOUT US"}
+                className={""}
+                Arrow={IoIosArrowDown}
+              >
+                <DropdownBox>
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Mission"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Vision"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Partners"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Reach & Presence"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Awards & Prizes"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Press & Media"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"FAQ"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
+                    }
+                    linkName={"Who We Are"}
+                    linkClass={"after:hidden"}
+                  />
+                </DropdownBox>
+              </NavItem>
+              <NavItem
+                href={"#"}
+                linkName={"PROGRAM"}
+                className={""}
+                Arrow={IoIosArrowDown}
+              >
+                <DropdownBox>
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"All Projects"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Education Program "}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Health Program "}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Awareness Program "}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Emergency Response"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Project Tribeni"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
+                    }
+                    linkName={"DLSH"}
+                    linkClass={"after:hidden"}
+                  />
+                </DropdownBox>
+              </NavItem>
+              <NavItem
+                href={"#"}
+                linkName={"GET INVOLVED"}
+                className={""}
+                Arrow={IoIosArrowDown}
+              >
+                <DropdownBox>
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Make A Donation"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Be A Volunteer"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Be A Media Representative"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
+                    }
+                    linkName={"Be A Sponsor Or Partner"}
+                    linkClass={"after:hidden"}
+                  />
+                </DropdownBox>
+              </NavItem>
+              <NavItem
+                href={"#"}
+                linkName={"TEAM"}
+                className={""}
+                Arrow={IoIosArrowDown}
+              >
+                <DropdownBox>
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
+                    }
+                    linkName={"Volunteers"}
+                    linkClass={"after:hidden"}
+                  />
+                  <NavItem
+                    className={
+                      "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5"
+                    }
+                    linkName={"Campus Ambassador"}
+                    linkClass={"after:hidden"}
+                  />
+                </DropdownBox>
+              </NavItem>
+              <NavItem href={"#"} linkName={"WFH BLOG"} className={""} />
+              <NavItem href={"#"} linkName={"CONTACT"} className={""} />
+            </ul>
+            <Button
+              className="lg:h-full flex items-center justify-center text-center text-base px-2 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt w-[18vw] lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
+              btnText="Donate Now"
+            />
+          </div>
         </div>
       </nav>
     </>
