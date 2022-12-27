@@ -11,12 +11,28 @@ const BlogSlider = () => {
     const data = {
         navigation: false,
         pagination: false,
-        autoplay: true,
+        autoplay: false,
         slidesPerView: 3
     }
     const blogimg = {
         img1: blog1,
         img2: blog2
+    }
+    const date = {
+        date1: ' March 1,2022',
+        date2: ' January 31,2022'
+    }
+    const title = {
+        title1: 'Donate Love, Spread Happiness 2022',
+        title2: 'ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন'
+    }
+    const description = {
+        description1: '১৪ই ফেব্রুয়ারির এই দিনটা একটু অন্যভাবে চিন্তা করুন। এই দিনটি যদি অসহায় পরিবারহীন শিশুদের সাথে আনন্দ ভাগাভাগি করে কাটাতে পারেন, মাতৃস্নেহ দিয়ে একবেলা খাবার খাইয়ে দিতে পারেন, বাবা-মায়ের মতো ভালোবেসে',
+        description2: 'ভালোবাসা দিবসে যেখানে সবাই তাদের পরিবার পরিজন,প্রিয় মানুষের সাথে ভালোবাসা দিবস উদযাপন করে সেখানে সমাজ কথিত সুবিধাবঞ্চিত পথশিশু সবার মাঝে খুশি ছড়িয়ে দিতে দিনব্যাপী নানা কার্যক্রমের মাধ্যমে বিশ্বসাহিত্য কেন্দ্রে ভালোবাসা'
+    }
+    const link = {
+        link1: '2022/01/31/donate-love-spread-happiness-2022/',
+        link2: '/2022/03/01/dlsh2022/',
     }
     return (
         <div className='mx-3 lg:mx-40 my-20'>
@@ -33,21 +49,37 @@ const BlogSlider = () => {
                 <SwiperSlide>
                     <BlogCard
                         blogimg={blogimg.img1}
+                        date={date.date1}
+                        title={title.title1}
+                        description={description.description1}
+                        link={link.link1}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <BlogCard
                         blogimg={blogimg.img2}
+                        date={date.date2}
+                        title={title.title2}
+                        description={description.description2}
+                        link={link.link2}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <BlogCard
                         blogimg={blogimg.img1}
+                        date={date.date1}
+                        title={title.title1}
+                        description={description.description1}
+                        link={link.link1}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <BlogCard
                         blogimg={blogimg.img2}
+                        date={date.date2}
+                        title={title.title2}
+                        description={description.description2}
+                        link={link.link2}
                     />
                 </SwiperSlide>
             </Slider>
