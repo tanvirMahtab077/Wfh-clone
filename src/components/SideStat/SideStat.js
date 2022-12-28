@@ -3,14 +3,15 @@ import { CountUp } from 'use-count-up';
 import { VscSmiley } from 'react-icons/vsc'
 import { GiProgression } from 'react-icons/gi'
 
-const SideStat = ({ statTitle, statDescription }) => {
+const SideStat = ({ statHead, statTitle, statDescription }) => {
     return (
         <div>
             <div className='mb-20 flex items-center justify-between'>
                 <div>
                     <div className='flex items-center mb-5'>
-                        <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-4  bg-[#0097FA] mr-3'></span>
+                        <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-6  bg-[#0097FA] mr-3'></span>
                         <div>
+                            <h1 className='text-[#0097FA] text-lg font-semibold'>{statHead}</h1>
                             <h1 className='font-bold text-3xl font-sans'>{statTitle}</h1>
                         </div>
                     </div>

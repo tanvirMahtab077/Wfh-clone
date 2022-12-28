@@ -179,7 +179,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Awareness Program "}
                                         linkClass={"after:hidden"}
-                                        href={"awarness-program"}
+                                        href={"awareness-program"}
                                     />
                                     <NavItem
                                         className={
