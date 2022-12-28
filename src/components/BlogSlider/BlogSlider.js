@@ -3,7 +3,7 @@ import { SwiperSlide } from 'swiper/react';
 import Slider from '../Slider/Slider';
 import blog1 from '../../Assests/Imgs/blog-1.jpg'
 import blog2 from '../../Assests/Imgs/blog-2.jpg'
-import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import BlogCard from '../BlogCard/BlogCard';
 

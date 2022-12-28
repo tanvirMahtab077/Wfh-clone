@@ -10,7 +10,7 @@ import cri from '../../Assests/Imgs/CRI.png'
 import yb from '../../Assests/Imgs/young-banlga.png'
 import tribeni from '../../Assests/Imgs/tribeni.png'
 import shh from '../../Assests/Imgs/SHH.png'
-import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 const PartnerSlider = () => {
