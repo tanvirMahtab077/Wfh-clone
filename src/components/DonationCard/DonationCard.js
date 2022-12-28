@@ -1,6 +1,6 @@
 import React from 'react';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
-import '../DonationCard/DonationCard.css';
+import './DonationCard.css';
 import {FaLongArrowAltRight} from "react-icons/fa";
 import { FaBeer,  } from "@react-icons/all-files/fa/FaBeer";
 
@@ -8,12 +8,14 @@ const DonationCard = ({donation}) => {
     const {name, btn, img, description, cardColor} = donation;
 
     return (
-        <div className='single-card'>
-            <img className="rounded-t-lg" src={img} alt="" />
-          <div className={`text-center p-4 text-white ${cardColor} rounded-b-lg`}>
-          <h2 class="my-3 text-2xl font-bold">{name}</h2>
-            <h3>{description}</h3>
-          <PrimaryButton>{btn} <FaLongArrowAltRight className='text-xl ml-2'/></PrimaryButton>
+        <div className='flex flex-col item-center w-[300px] h-[400px] text-center'>
+          <img className="rounded-t-lg w-full h-[200px]" src={img} alt="" />
+          <div className={`flex flex-col justify-center w-full h-[200px] text-center p-4 text-white ${cardColor} rounded-b-lg`}>
+            <h2 class="my-3 text-sm font-bold">{name}</h2>
+            <p className='text-sm'>{description}</p>
+            <div className='mx-auto'>
+            <PrimaryButton>{btn}<FaLongArrowAltRight/></PrimaryButton>
+            </div>
           </div>
         </div>
     );

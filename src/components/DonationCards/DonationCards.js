@@ -1,6 +1,6 @@
 import React from 'react';
 import DonationCard from '../DonationCard/DonationCard';
-import '../DonationCards/DonationCards.css';
+// import '../DonationCards/DonationCards.css';
 
 const DonationCards = () => {
    const donations=[
@@ -18,7 +18,7 @@ const DonationCards = () => {
         },
     ]
     return (
-<div className='cards'>
+<div className='flex flex-wrap justify-center gap-4 p-10 mt-10'>
 {
     donations.map(donation => <DonationCard
     key={donation.id}
