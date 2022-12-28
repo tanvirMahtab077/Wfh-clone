@@ -6,14 +6,14 @@ import Banner from '../../components/banner/Banner';
 
 
 const Home = () => {
-    return (
-        <>
-            <Banner />
-            <ActivitySlider />
-            <PartnerSlider />
-            <BlogSlider />
-        </>
-    );
+  return (
+    <>
+      <Banner />
+      <ActivitySlider />
+      <PartnerSlider />
+      <BlogSlider />
+    </>
+  );
 };
 
 export default Home;
