@@ -11,15 +11,66 @@ import portfolio8 from '../../Assests/Imgs/portfolio-8.jpg'
 import portfolio9 from '../../Assests/Imgs/portfolio-9.jpg'
 import portfolio10 from '../../Assests/Imgs/portfolio-10.jpg'
 import { SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
-import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import { MdOutlineArrowRightAlt } from 'react-icons/md'
+import ProjectCard from '../ProjectCard/ProjectCard';
 const ActivitySlider = () => {
     const data = {
         navigation: true,
         pagination: true,
         autoplay: true,
         slidesPerView: 4
+    }
+    const portfolio = {
+        portfolio1: portfolio1,
+        portfolio2: portfolio2,
+        portfolio3: portfolio3,
+        portfolio4: portfolio4,
+        portfolio5: portfolio5,
+        portfolio6: portfolio6,
+        portfolio7: portfolio7,
+        portfolio8: portfolio8,
+        portfolio9: portfolio9,
+        portfolio10: portfolio10
+    }
+    const badge = {
+        emergency: 'Emeregency Response',
+        education: 'Education',
+        health: 'Health',
+        awareness: 'Awareness',
+        projectTribeni: 'Prject Tribeni',
+        portfolio: 'Portfolio'
+    }
+    const title = {
+        title1: 'Winter clothes distribution',
+        title2: 'Distribute relief to cyclone Roanu affected coastal people',
+        title3: 'পড়বে ওরা,গড়বে দেশ (They Read, They Build)',
+        title4: 'Health Camp, Medicine &amp; Educational Equipment For Flood Victim children',
+        title5: 'Application mobile',
+        title6: 'Business card',
+        title7: 'Mobile Weather App',
+        title8: 'LowPoly Social',
+        title9: 'Special bikes',
+        title10: 'Moderats eloquenti'
+    }
+    const description = {
+        description1: 'Winters in the northern part of Bangladesh are extremely cold and affects highly to the disabled, children and the elderly,',
+        description2: 'When the founding members were planning to start an organization in order to help people, the cyclone Roanu hit the',
+        description3: 'Students from poor families can’t buy educational materials. Though they have talent, because of poverty, students from rural areas have',
+        description4: 'Works For Humanity organized an event named “প্রাণের জন্য ত্রাণ – Relief For Flood Victims” on 15th September at Jamalpur',
+        description5: 'Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean'
+    }
+    const link = {
+        link1: '/portfolio/winter-clothes-distribution/',
+        link2: '/portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/',
+        link3: '/portfolio/they-read-they-build/',
+        link4: '/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/',
+        link5: '/portfolio/application-mobile/',
+        link6: '/portfolio/business-card/',
+        link7: '/portfolio/mobile-weather-app/',
+        link8: '/portfolio/lowpoly-social/',
+        link9: '/portfolio/special-bikes/',
+        link10: '/portfolio/moderats-eloquenti/'
     }
     return (
         <div className='mx-3 lg:mx-40 my-20'>
@@ -37,124 +88,94 @@ const ActivitySlider = () => {
                 data={data}
             >
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
-                            <img className='w-full h-full' src={portfolio1} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to='/portfolio/winter-clothes-distribution/'>Winter clothes distribution <br />-2022</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Winters in the northern part of Bangladesh are extremely cold and affects highly to the disabled, children and the elderly,</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio1}
+                        badge={badge.emergency}
+                        title={title.title1}
+                        description={description.description1}
+                        link={link.link1}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Emeregency Response</span>
-                            <img className='w-full h-full' src={portfolio2} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/">Distribute relief to cyclone Roanu affected coastal people</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>When the founding members were planning to start an organization in order to help people, the cyclone Roanu hit the</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio2}
+                        badge={badge.emergency}
+                        title={title.title2}
+                        description={description.description2}
+                        link={link.link2}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
-                            <img className='w-full h-full' src={portfolio3} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/they-read-they-build/">পড়বে ওরা,গড়বে দেশ (They Read, They Build)</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Students from poor families can’t buy educational materials. Though they have talent, because of poverty, students from rural areas have</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio3}
+                        badge={badge.education}
+                        title={title.title3}
+                        description={description.description3}
+                        link={link.link3}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
-                            <img className='w-full h-full' src={portfolio4} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/">Health Camp, Medicine &amp; Educational Equipment For Flood Victim children</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Works For Humanity organized an event named “প্রাণের জন্য ত্রাণ – Relief For Flood Victims” on 15th September at Jamalpur</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio4}
+                        badge={badge.health}
+                        title={title.title4}
+                        description={description.description4}
+                        link={link.link4}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Portfolio</span>
-                            <img className='w-full h-full' src={portfolio5} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/application-mobile/">Application mobile</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio5}
+                        badge={badge.portfolio}
+                        title={title.title5}
+                        description={description.description5}
+                        link={link.link5}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Education</span>
-                            <img className='w-full h-full' src={portfolio6} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/business-card/">Business card</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio6}
+                        badge={badge.education}
+                        title={title.title6}
+                        description={description.description5}
+                        link={link.link6}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Health</span>
-                            <img className='w-full h-full' src={portfolio7} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/mobile-weather-app/">Mobile Weather App</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio7}
+                        badge={badge.health}
+                        title={title.title7}
+                        description={description.description5}
+                        link={link.link7}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Awareness</span>
-                            <img className='w-full h-full' src={portfolio8} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/lowpoly-social/">LowPoly Social</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio8}
+                        badge={badge.awareness}
+                        title={title.title8}
+                        description={description.description5}
+                        link={link.link8}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
-                            <img className='w-full h-full' src={portfolio9} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/special-bikes/">Special bikes</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio9}
+                        badge={badge.projectTribeni}
+                        title={title.title9}
+                        description={description.description5}
+                        link={link.link9}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='text-left w-[370px] h-[370px]'>
-                        <div className='mb-2 w-full h-[220px]'>
-                            <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">Project Tribeni</span>
-                            <img className='w-full h-full' src={portfolio10} alt="" />
-                        </div>
-                        <div>
-                            <Link className='font-semibold mb-2 font-sans' to="/portfolio/moderats-eloquenti/">Moderats eloquenti</Link>
-                            <p className='text-sm font-normal text-zinc-400 font-sans'>Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer eros eget egestas. Aenean</p>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        portfolio={portfolio.portfolio10}
+                        badge={badge.projectTribeni}
+                        title={title.title10}
+                        description={description.description5}
+                        link={link.link10}
+                    />
                 </SwiperSlide>
             </Slider>
             <div className='flex items-center flex-col'>
