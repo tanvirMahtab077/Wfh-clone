@@ -17,7 +17,7 @@ const AwardCards = () => {
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {card_info.map((card, index) => {
             return (
-              <div className="group relative border border-1 rounded-md h-72" key={index}>
+              <div className="group relative border border-1 rounded-md lg:h-72" key={index}>
                 <div className="rounded-md p-3">
                   <img src={process.env.PUBLIC_URL + `/images/${card.img}`} alt="Front of men&#039;s Basic Tee in black." className="h-2/4 w-11/12 m-auto"/>
                 </div>

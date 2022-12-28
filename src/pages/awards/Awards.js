@@ -1,8 +1,8 @@
 import React from 'react'
-import Certification from '../components/certification/Certification'
-import AwardCards from '../components/awardCards/AwardCards'
-import RecentPost from '../components/recentPost/RecentPost'
-import Calendar from '../components/calendar/Calendar'
+import Certification from '../../components/certification/Certification'
+import AwardCards from '../../components/awardCards/AwardCards'
+import RecentPost from '../../components/recentPost/RecentPost'
+import Calendar from '../../components/calendar/Calendar'
 
 const Awards = () => {
   return (
