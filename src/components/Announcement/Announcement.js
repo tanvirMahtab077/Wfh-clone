@@ -1,10 +1,9 @@
 import React from 'react';
-// import '../Announcement/Announcement.css'
 import love from '../../image/loveimg.jpg';
 
 const Announcement = () => {
     return (
-        <div className='flex flex-row flex-wrap justify-center gap-10 mt-10'>
+        <div className='flex flex-wrap justify-center p-10 gap-10 mt-10'>
             <div class="border-l-2 w-[700px] h-16 border-blue-600 ...">
                 <h1 className='text-xl pl-2 b2 text-blue-600'>Non-Profit Organization In Bangladesh</h1>
                 <h2 className='text-2xl pl-2 font-bold pb-4'>WORKS FOR HUMANITY FOUNDATION</h2>
@@ -17,7 +16,7 @@ const Announcement = () => {
                 <h3 className='py-4 text-xl font-bold'>Dept. of Health & Blood</h3>
                 <p className='text-gray-500'>Can a human being imagine his body without blood? Or is it possible to make it by machine? Ans. Is NO, But blood can be needed for anyone, anytime. Basically, Dept. of Health & Blood is working for managing blood donors for needy patients.</p>
             </div>
-            <div className='w-[500px]'>
+            <div className='w-[500px] sm:mt-[700px] xl:mt-[0px] min-[577px]:mt-[800px] min-[400px]:mt-[900px]'>
                 <h2 className='text-xl font-bold'>ANNOUNCEMENT</h2>
                 <div class="border-b-2 w-14 my-4 border-blue-600 ..."></div>
                 <div className='border announce-box'>
