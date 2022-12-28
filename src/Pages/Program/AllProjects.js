@@ -43,7 +43,8 @@ const AllProjects = () => {
         title7: 'Mobile Weather App',
         title8: 'LowPoly Social',
         title9: 'Special bikes',
-        title10: 'Moderats eloquenti'
+        title10: 'Moderats eloquenti',
+        sds: "sss"
     }
     const description = {
         description1: 'Winters in the northern part of Bangladesh are extremely cold and affects highly to the disabled, children and the elderly,',
