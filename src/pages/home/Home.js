@@ -6,17 +6,19 @@ import ActivitySlider from "../../components/ActivitySlider/ActivitySlider";
 import PartnerSlider from "../../components/PartnerSlider/PartnerSlider";
 import BlogSlider from "../../components/BlogSlider/BlogSlider";
 import '../../pages/home/Home.css';
+import DiscoverBanner from '../../components/discoverBanner/DiscoverBanner';
 
 
 const Home = () => {
   return (
     <>
-    <Banner/>
-    <DonationCards></DonationCards>
-    <Announcement></Announcement>
-    <ActivitySlider />
-    <PartnerSlider />
-    <BlogSlider />
+      <Banner />
+      <DonationCards></DonationCards>
+      <Announcement></Announcement>
+      <ActivitySlider />
+      <DiscoverBanner />
+      <PartnerSlider />
+      <BlogSlider />
     </>
   )
 }
