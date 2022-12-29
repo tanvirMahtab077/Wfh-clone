@@ -6,20 +6,21 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const BlogCardSingle = ({
   className,
+  blogImgPath,
   topicDate,
   heading,
   content,
   blogLink,
 }) => {
   return (
-    <div className="h-[700px] font-pop text-center w-[49%] flex flex-col justify-between items-center border-[1px] border-solid rounded-md  pb-8 shadow-md">
+    <div className="lg:h-[700px] font-pop text-center lg:w-[47%] flex flex-col justify-between items-center gap-y-8 lg:gap-y-4 border-[1px] border-solid rounded-md pb-8 shadow-md">
       <div className="flex flex-col items-center gap-y-4 overflow-hidden">
         <a href={blogLink}>
-          <Image src={"assets/images/blog/blog-1.jpg"} />
+          <Image src={blogImgPath} />
         </a>
-        <p className="mt-2 ">
+        <p className="mt-3">
           <a
-            className="text-sm font-semibold text-primary/60 hover:text-primary"
+            className="text-sm font-semibold text-primary/60 hover:text-primary  linear duration-300"
             href="#"
           >
             {topicDate}
