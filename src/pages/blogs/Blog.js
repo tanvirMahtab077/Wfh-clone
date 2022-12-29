@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../../components/banner/Banner";
 import BlogShowcase from "../../components/blogShowcase/BlogShowcase";
 import BlogSideBar from "../../components/blogSideBar/BlogSideBar";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
