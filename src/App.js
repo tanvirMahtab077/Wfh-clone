@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./components/rootLayout/RootLayout";
+import BeAVolunteer from "./pages/getInvolved/beAvolunteer/BeAVolunteer";
 import MakeDonation from "./pages/getInvolved/makeDonation/MakeDonation";
 import Home from "./pages/home/Home";
 import AllProjects from "./pages/Program/AllProjects";
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path='/project-tribeni' element={<ProjectTribeni />} />
       <Route path='/dlsh' element={<Dlsh />} />
       <Route path='/make-a-donation' element={<MakeDonation />} />
+      <Route path='/be-a-volunteer' element={<BeAVolunteer />} />
     </Route>
   )
 );
