@@ -1,0 +1,32 @@
+.announcement{
+    margin-top: 100px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.love-img-box{
+    overflow: hidden;
+    cursor: pointer;
+}
+.love-img{
+    transform: scale(1);
+    transition: 0.9s ease-in-out;
+}
+.love-img:hover{
+    transform: scale(1.5);
+    color: black;
+    opacity: 0.7;
+}
+.single-border hr{
+    border: 1px solid rgb(0, 17, 255);
+    width: 10px;
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px 2px;
+}
+.announce-box:hover{
+    box-shadow: 1px 3px 18px 11px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 1px 3px 18px 11px rgba(0,0,0,0.07);
+    -moz-box-shadow: 1px 3px 18px 11px rgba(0,0,0,0.07);
+}
