@@ -263,7 +263,11 @@ const Navbar = () => {
                   />
                 </DropdownBox>
               </NavItem>
-              <NavItem href={"#"} linkName={"WFH BLOG"} className={""} />
+              <NavItem
+                href={"/wfh-blogs"}
+                linkName={"WFH BLOG"}
+                className={""}
+              />
               <NavItem href={"#"} linkName={"CONTACT"} className={""} />
             </ul>
             <Button
