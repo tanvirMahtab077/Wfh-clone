@@ -1,8 +1,13 @@
 import React from 'react';
 import HeroBanner from '../../../components/HeroBanner/HeroBanner';
 import volunteer from '../../../Assests/Imgs/Voluteer-Opportunities-in-Bangladesh.jpg'
+import { useForm } from 'react-hook-form';
 
 const BeAVolunteer = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+    console.log(errors);
+
     const header = 'Volunteer Opportunities In Bangladesh'
     return (
         <div>
@@ -19,8 +24,8 @@ const BeAVolunteer = () => {
                     <p className='text-zinc-400 lg:w-[590px] font-sans'>WFH Foundation, a socio-economic development  non-profit  organization in Bangladesh, is working to ensure the basic needs of food, health, education, employment, human rights, awareness, and so on all over the world. Being a youth-led organization, WFH Foundation is full of volunteer opportunities in Bangladesh which provides leadership development with an exceptional opportunity to gather hands on experience to work for the society. To grab this opportunity, fill up the Volunteer Registration Form and be a change-maker in your country.</p>
                     <img src={volunteer} alt="" className='w-[650px] my-5' />
                     <p className='text-zinc-400 lg:w-[590px] font-sans'>Through this volunteering program, WFH Foundation is offering volunteer opportunities and implementing various projects in different districts and people of any age can join this volunteering program and make an important contribution to our future world and civilization.</p>
-                    <h1 className='font-bold text-3xl font-sans my-3'>Responsibility to be a Volunteer</h1>
-                    <ul className='text-zinc-400 lg:w-[570px] text-sm font-sans list-disc list-inside'>
+                    <h1 className='font-bold text-2xl font-sans my-4'>Responsibility to be a Volunteer</h1>
+                    <ul className='text-zinc-400 lg:w-[570px] text-sm font-sans list-disc list-inside ml-8'>
                         <li>
                             The willingness to work voluntarily in a patriotic mind is needed.
                         </li>
@@ -76,13 +81,126 @@ const BeAVolunteer = () => {
                             To execute, direct, monitor, and follow up the technical, organizational, and training activities to ensure the achievement of the project targets.
                         </li>
                     </ul>
+                    <h1 className='font-bold text-xl font-sans mt-6 mb-4'>Benefits of A Volunteer</h1>
+                    <ul className='text-zinc-400 lg:w-[570px] text-sm font-sans list-disc list-inside ml-8'>
+                        <li>
+                            T-shirt, ID Card, and Volunteer recognition & participation certificate for each volunteer (conditions apply).
+                        </li>
+                        <li>
+                            Opportunity to represent WFH in national and international conferences & seminars.
+                        </li>
+                        <li>
+                            Volunteering is a practice to serve a nation. Therefore, volunteers will get the chance to improve their communication and social networking skill.
+                        </li>
+                        <li>
+                            There will be recognition for the active volunteers.
+                        </li>
+                        <li>
+                            Volunteer from the creative team will have more scope for job opportunities.
+                        </li>
+                        <li>
+                            Chances to improve teamwork skills.
+                        </li>
+                        <li>
+                            Two month long training session.
+                        </li>
+                        <li>
+                            Mentorship and career counseling.
+                        </li>
+                    </ul>
                 </div>
                 <div className='lg:w-[600px]'>
                     <div className='px-10 py-8 bg-[#0097FA] mt-10 mb-12 w-full relative after:content:"" before:content:"" before:table after:table after:border-[12px] after:border-solid after:border-transparent after:border-t-[#0097FA] after:absolute after:-bottom-6 after:left-1/2 after:-ml-3 after:z-10'>
                         <h1 className='text-2xl lg:text-4xl font-bold text-white text-center'>Volunteer Registration Form</h1>
                     </div>
                     <div>
-                        <div className='bg-[#0097fa] w-full bg-opacity-[0.15] rounded p-5'></div>
+                        <div className='bg-[#0097fa] w-full bg-opacity-[0.15] rounded p-5'>
+                            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center'>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="fullName">Full Name<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="text" placeholder="Full Name" {...register("fullName", { required: true, maxLength: 80 })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="email">Email Address<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="phoneNumber">Phone Number<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="tel" placeholder="Phone Number" {...register("phoneNumber", { required: true })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="dateOfBirth">Date Of Birth<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="date" placeholder="Date Of Birth" {...register("dateOfBirth", { required: true })} />
+                                </div>
+                                <div className='flext items-center justify-between'>
+                                    <span className='flex flex-col'>
+                                        <label htmlFor="bloodGroup">Blood Group</label>
+                                        <select {...register("bloodGroup", {})}>
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                        </select>
+                                    </span>
+                                    <span className='flex flex-col'>
+                                        <label htmlFor="ableToDonate">Able To Donate</label>
+                                        <div className='flex items-center gap-x-2'>
+                                            <input {...register("ablteToDonate", { required: true })} type="radio" value="Yes" />Yes
+                                            <input {...register("ablteToDonate", { required: true })} type="radio" value="No" />No
+                                        </div>
+                                    </span>
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="address">Street Address<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="text" placeholder="Street Address" {...register("address", { required: true })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="district">District<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select {...register("district", { required: true })}>
+                                        <option value="Mr">Dhaka</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Dr">Dr</option>
+                                    </select>
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="education">Educational Qualification (Mention the Subject/Group)<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="text" placeholder="Education" {...register("education", { required: true })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="profession">Profession<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select {...register("profession", { required: true })}>
+                                        <option value="Mr">Student</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Dr">Dr</option>
+                                    </select>
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="otherOrg">Involvement With Any Other Organization?<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select {...register("otherOrg", { required: true })}>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="facebookLink">Facebook Profile Link<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input type="text" placeholder="Facebook Profile Link" {...register("facebookLink", { required: true })} />
+                                </div>
+                                <div className='flex flex-col w-full font-pop text-sm my-3'>
+                                    <label htmlFor="volunteerType">Volunteer Type<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select {...register("volunteerType", { required: true })}>
+                                        <option value="offline">Offline</option>
+                                        <option value="online">Online</option>
+                                    </select>
+                                </div>
+                                <input type="submit" />
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
