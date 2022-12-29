@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ portfolio, badge, title, description, link }) => {
     return (
-        <div className='text-left w-[430px] lg:w-[300px] mb-10'>
-            <div className='mb-2 w-full h-[300px] lg:h-[220px] relative'>
+        <div className='text-left w-[330px] lg:w-[300px] mb-10'>
+            <div className='mb-2 w-full h-[250px] lg:h-[220px] relative'>
                 <span className="px-2 bg-[#0097FA] text-white left-0 font-semibold absolute font-sans">{badge}</span>
                 <img className='w-full h-full' src={portfolio} alt="" />
             </div>

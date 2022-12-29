@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./components/rootLayout/RootLayout";
+import MakeDonation from "./pages/getInvolved/makeDonation/MakeDonation";
 import Home from "./pages/home/Home";
 import AllProjects from "./pages/Program/AllProjects";
 import AwarenessProgram from "./pages/Program/AwarenessProgram";
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path='/emergency-response' element={<EmergencyResponse />} />
       <Route path='/project-tribeni' element={<ProjectTribeni />} />
       <Route path='/dlsh' element={<Dlsh />} />
+      <Route path='/make-a-donation' element={<MakeDonation />} />
     </Route>
   )
 );
