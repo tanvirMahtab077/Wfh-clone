@@ -3,7 +3,6 @@ import Banner from '../../components/banner/Banner'
 import ActivitySlider from "../../components/ActivitySlider/ActivitySlider";
 import PartnerSlider from "../../components/PartnerSlider/PartnerSlider";
 import BlogSlider from "../../components/BlogSlider/BlogSlider";
-import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
     <ActivitySlider />
     <PartnerSlider />
     <BlogSlider />
-    <Footer/>
     </>
   )
 }
