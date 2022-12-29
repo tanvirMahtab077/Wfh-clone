@@ -79,7 +79,7 @@ const Navbar = () => {
         <div className="lg:max-w-container mx-auto flex flex-col lg:flex-row px-3 xl:px-0 relative">
           <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0">
             <ul className="lg:h-[4.8vw] cursor-pointer list-none flex flex-col lg:flex-row items-start lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
-              <NavItem href={"#"} linkName={"HOME"} className={""} />
+              <NavItem href={"/"} linkName={"HOME"} className={""} />
               <NavItem
                 href={"#"}
                 linkName={"ABOUT US"}
