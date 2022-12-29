@@ -94,21 +94,21 @@ const Footer = () => {
       <div className="text-center w-72 mx-auto py-12 text-white">
         <img className="pb-4" src={logo} alt="wfh" />
         <p className="text-start py-2">Spread Happiness Over The World</p>
-        <p className="flex text-2xl py-2">
+        <p className="flex text-xl py-2 ml-3 mt-1">
           {" "}
-          <span className="mr-7">
+          <span className="mr-7 hover:text-blueTxt linear duration-300 cursor-pointer">
             <FaFacebookF />
           </span>{" "}
-          <span className="mr-7">
+          <span className="mr-7 hover:text-blueTxt linear duration-300 cursor-pointer">
             <FaInstagram />
           </span>{" "}
-          <span className="mr-7">
+          <span className="mr-7 hover:text-blueTxt linear duration-300 cursor-pointer">
             <FaTwitter />
           </span>{" "}
-          <span className="mr-7">
+          <span className="mr-7 hover:text-blueTxt linear duration-300 cursor-pointer">
             <FaLinkedinIn />
           </span>{" "}
-          <span>
+          <span className="hover:text-blueTxt linear duration-300 cursor-pointer">
             <FaYoutube />
           </span>
         </p>
