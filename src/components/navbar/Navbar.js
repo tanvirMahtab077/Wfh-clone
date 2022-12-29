@@ -19,7 +19,6 @@ const Navbar = () => {
     setHamOpen(!hamOpen);
   };
 
-
   useEffect(() => {
     window.innerWidth >= 1024 && setOpen(true);
     const screenResize = () => {
