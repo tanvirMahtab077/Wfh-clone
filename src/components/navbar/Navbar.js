@@ -148,7 +148,6 @@ const Navbar = () => {
                     className={
                       "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
                     }
-                    href={"/all-projects"}
                     linkName={"All Projects"}
                     linkClass={"after:hidden"}
                   />
