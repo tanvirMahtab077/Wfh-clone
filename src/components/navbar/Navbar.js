@@ -19,6 +19,15 @@ const Navbar = () => {
     setHamOpen(!hamOpen);
   };
 
+
+  useEffect(() => {
+    window.innerWidth >= 1024 && setOpen(true);
+    const screenResize = () => {
+      window.innerWidth >= 1024 ? setOpen(true) : setOpen(false);
+    };
+    window.addEventListener("resize", screenResize);
+  }, []);
+
   return (
     <>
       <div className="sticky lg:static top-0 left-0 bg-white font-pop text-[15px] text-primary z-[99999]">
@@ -263,7 +272,7 @@ const Navbar = () => {
               <NavItem href={"#"} linkName={"CONTACT"} className={""} />
             </ul>
             <Button
-              className="lg:h-full w-[40vw] lg:flex items-center justify-center text-center text-base px-3 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt w-[18vw] lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
+              className="lg:h-full w-[40vw] lg:flex items-center justify-center text-center text-base px-3 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
               btnText="Donate Now"
             />
           </div>
