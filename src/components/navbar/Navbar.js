@@ -118,6 +118,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Awards & Prizes"}
                                         linkClass={"after:hidden"}
+                                        href={"our-awards"}
                                     />
                                     <NavItem
                                         className={
@@ -125,6 +126,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Press & Media"}
                                         linkClass={"after:hidden"}
+                                        href={"media-coverage"}
                                     />
                                     <NavItem
                                         className={
