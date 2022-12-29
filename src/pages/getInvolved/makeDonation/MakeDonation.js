@@ -66,7 +66,7 @@ const MakeDonation = () => {
     return (
         <div>
             <HeroBanner header={header} />
-            <div className='flex flex-col lg:flex-row justify-center my-20 lg:mx-40 mx-5'>
+            <div className='flex flex-col lg:flex-row justify-center my-20 lg:mb-40 lg:mx-40 mx-5'>
                 <div className='mb-14 lg:mb-5 lg:mr-8 lg:mt-8'>
                     <div className='flex items-center mb-5 lg:w-[600px]'>
                         <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-20 lg:py-12  bg-[#0097FA] mr-3'></span>
