@@ -1,7 +1,6 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
 import Slider from '../Slider/Slider';
-import './PartnerSlider.css'
 import eshikhon from '../../Assests/Imgs/eshikhon.png'
 import ibr from '../../Assests/Imgs/20220209_221905.png'
 import apon from '../../Assests/Imgs/Apon-Foundation.png'
@@ -22,33 +21,33 @@ const PartnerSlider = () => {
     }
     return (
         <div className=' mx-3 lg:mx-40 mb-10'>
-            <div className='p-8 bg-[#0097FA] mt-10 mb-5 partner-down'>
+            <div className='p-8 bg-[#0097FA] mt-10 mb-5 relative after:content:"" before:content:"" before:table after:table after:border-[12px] after:border-solid after:border-transparent after:border-t-[#0097FA] after:absolute after:-bottom-6 after:left-1/2 after:-ml-3 after:z-10'>
                 <h1 className='text-4xl font-bold text-white text-center'>Who Makes Us Strong</h1>
             </div>
             <Slider data={data}>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={yb} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={yb} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={cri} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={cri} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={apon} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={apon} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={tribeni} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={tribeni} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={shh} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={shh} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={ibr} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={canvas} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer mb-10' src={eshikhon} alt="" />
+                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />
                 </SwiperSlide>
             </Slider>
             <div className='flex items-center flex-col'>
