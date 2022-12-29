@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../layouts/button/Button";
 import { VscThreeBars } from "react-icons/vsc";
 import { BiSearch } from "react-icons/bi";
@@ -10,22 +10,14 @@ import DropdownBox from "../dropdownBox/DropdownBox";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const [hamOpen, setHamOpen] = useState(true);
-  const [searchFocus, setSearchFocus] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [hamOpen, setHamOpen] = useState(true);
+    const [searchFocus, setSearchFocus] = useState(false);
 
-  const handleNavItems = () => {
-    setOpen(!open);
-    setHamOpen(!hamOpen);
-  };
-
-  useEffect(() => {
-    window.innerWidth >= 1024 && setOpen(true);
-    const screenResize = () => {
-      window.innerWidth >= 1024 ? setOpen(true) : setOpen(false);
+    const handleNavItems = () => {
+        setOpen(!open);
+        setHamOpen(!hamOpen);
     };
-    window.addEventListener("resize", screenResize);
-  }, []);
 
   return (
     <>
@@ -156,6 +148,7 @@ const Navbar = () => {
                     className={
                       "linear duration-300 font-sans font-normal hover:text-blueTxt py-1 group-hover:py-3.5 border-b-[1px] border-solid border-black/20"
                     }
+                    href={"/all-projects"}
                     linkName={"All Projects"}
                     linkClass={"after:hidden"}
                   />

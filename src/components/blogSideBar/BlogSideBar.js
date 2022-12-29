@@ -55,9 +55,10 @@ const BlogSideBar = ({ className }) => {
               }`}
             />
           </form>
-          <h4 className="mb-4 mt-6 font-semibold text-xl text-primary">
+          <h4 className="mt-6 font-semibold text-xl text-primary">
             Recent Posts
           </h4>
+          <div className="border-b-2 mb-4 mt-2 w-24 border-[#0097FA]"></div>
           <div className="font-sans text-primary flex flex-col gap-y-4  w-[90%]">
             <div>
               <p className="hover:text-blueTxt linear duration-300">
@@ -77,10 +78,11 @@ const BlogSideBar = ({ className }) => {
           </div>
         </div>
 
-        <div>
-          <h4 className="mb-4 mt-10 font-semibold text-xl text-primary">
+        <div className="">
+          <h4 className="mt-10 font-semibold text-xl text-primary">
             SIGN UP FOR NEWSLETTER
           </h4>
+          <div className="border-b-2 mb-4 mt-2 w-24 border-[#0097FA]"></div>
         </div>
       </div>
     </div>
