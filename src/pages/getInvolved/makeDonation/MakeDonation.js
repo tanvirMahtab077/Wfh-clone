@@ -108,7 +108,7 @@ const MakeDonation = () => {
                         <h1 className='text-2xl lg:text-4xl font-bold text-white text-center'>Make A Donation</h1>
                     </div>
                     <div>
-                        <div className='bg-[#0097fa] w-full bg-opacity-[0.15] rounded p-5'>
+                        <div className='bg-[#0097fa] w-full bg-opacity-[0.10] rounded p-5'>
                             <div className='grid grid-cols-3 lg:grid-cols-4 gap-5'>
                                 <span className={selected1 === true ? `bg-[#0097fa] px-5 lg:px-9 py-3 text-white font-sans cursor-pointer border border-[#0097fa]` : `border border-[#0097fa] px-5 lg:px-9 py-3 text-[#0097fa] font-sans cursor-pointer`} onClick={handleSelect1}>৳1000</span>
                                 <span className={selected2 === true ? `bg-[#0097fa] px-5 lg:px-9 py-3 text-white font-sans cursor-pointer border border-[#0097fa]` : `border border-[#0097fa] px-5 lg:px-9 py-3 text-[#0097fa] font-sans cursor-pointer`} onClick={handleSelect2}>৳2000</span>
@@ -133,13 +133,13 @@ const MakeDonation = () => {
                                 <Slider
                                     data={data}
                                 >
-                                    <SwiperSlide><img src={nagad} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={bkash} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={rocket} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={paypal} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={visa} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={upay} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={mastercard} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.15]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={nagad} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={bkash} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={rocket} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={paypal} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={visa} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={upay} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={mastercard} className='lg:w-[85px] cursor-pointer bg-[#0097fa] bg-opacity-[0.10]' alt="" /></SwiperSlide>
                                 </Slider>
                             </div>
                         </div>
