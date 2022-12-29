@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HeroBanner.css";
 
 const HeroBanner = ({ header }) => {
@@ -9,7 +10,10 @@ const HeroBanner = ({ header }) => {
           {header}
         </h1>
         <p className="text-xs lg:text-base mt-2 text-white opacity-80">
-          Home / {header}
+          <Link to="/" className="hover:text-blueTxt  linear duration-300">
+            Home
+          </Link>{" "}
+          / {header}
         </p>
       </div>
     </div>
