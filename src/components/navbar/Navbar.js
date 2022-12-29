@@ -10,14 +10,14 @@ import DropdownBox from "../dropdownBox/DropdownBox";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
-    const [hamOpen, setHamOpen] = useState(true);
-    const [searchFocus, setSearchFocus] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [hamOpen, setHamOpen] = useState(true);
+  const [searchFocus, setSearchFocus] = useState(false);
 
-    const handleNavItems = () => {
-        setOpen(!open);
-        setHamOpen(!hamOpen);
-    };
+  const handleNavItems = () => {
+    setOpen(!open);
+    setHamOpen(!hamOpen);
+  };
 
   return (
     <>
