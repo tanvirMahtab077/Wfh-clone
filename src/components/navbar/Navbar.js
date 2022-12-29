@@ -74,7 +74,7 @@ const Navbar = () => {
           open
             ? "animate-[slideX_.4s_ease_1] lg:!animate-none"
             : "translate-x-[-100%] lg:translate-x-[0%]"
-        } bg-white lg:bg-primary w-[60vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:static top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-10 pt-11 lg:pt-0`}
+        } bg-white lg:bg-primary w-[60vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:sticky top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-10 pt-11 lg:pt-0`}
       >
         <div className="lg:max-w-container mx-auto flex flex-col lg:flex-row px-3 xl:px-0 relative">
           <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0">
