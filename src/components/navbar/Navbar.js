@@ -121,6 +121,7 @@ const Navbar = () => {
                     }
                     linkName={"Awards & Prizes"}
                     linkClass={"after:hidden"}
+                    href={"our-awards"}
                   />
                   <NavItem
                     className={
@@ -128,6 +129,7 @@ const Navbar = () => {
                     }
                     linkName={"Press & Media"}
                     linkClass={"after:hidden"}
+                    href={"media-coverage"}
                   />
                   <NavItem
                     className={
@@ -158,6 +160,7 @@ const Navbar = () => {
                     }
                     linkName={"All Projects"}
                     linkClass={"after:hidden"}
+                    href={"all-projects"}
                   />
                   <NavItem
                     className={
@@ -165,6 +168,7 @@ const Navbar = () => {
                     }
                     linkName={"Education Program "}
                     linkClass={"after:hidden"}
+                    href={"education-program"}
                   />
                   <NavItem
                     className={
@@ -172,6 +176,7 @@ const Navbar = () => {
                     }
                     linkName={"Health Program "}
                     linkClass={"after:hidden"}
+                    href={"health-program"}
                   />
                   <NavItem
                     className={
@@ -179,6 +184,7 @@ const Navbar = () => {
                     }
                     linkName={"Awareness Program "}
                     linkClass={"after:hidden"}
+                    href={"awareness-program"}
                   />
                   <NavItem
                     className={
@@ -186,6 +192,7 @@ const Navbar = () => {
                     }
                     linkName={"Emergency Response"}
                     linkClass={"after:hidden"}
+                    href={"emergency-response"}
                   />
                   <NavItem
                     className={
@@ -193,6 +200,7 @@ const Navbar = () => {
                     }
                     linkName={"Project Tribeni"}
                     linkClass={"after:hidden"}
+                    href={"project-tribeni"}
                   />
                   <NavItem
                     className={
@@ -200,6 +208,7 @@ const Navbar = () => {
                     }
                     linkName={"DLSH"}
                     linkClass={"after:hidden"}
+                    href={"dlsh"}
                   />
                 </DropdownBox>
               </NavItem>
@@ -216,6 +225,7 @@ const Navbar = () => {
                     }
                     linkName={"Make A Donation"}
                     linkClass={"after:hidden"}
+                    href={"make-a-donation"}
                   />
                   <NavItem
                     className={
@@ -223,6 +233,7 @@ const Navbar = () => {
                     }
                     linkName={"Be A Volunteer"}
                     linkClass={"after:hidden"}
+                    href={"be-a-volunteer"}
                   />
                   <NavItem
                     className={
@@ -264,9 +275,9 @@ const Navbar = () => {
                 </DropdownBox>
               </NavItem>
               <NavItem
-                href={"/wfh-blogs"}
                 linkName={"WFH BLOG"}
                 className={""}
+                href={"wfh-blogs"}
               />
               <NavItem href={"#"} linkName={"CONTACT"} className={""} />
             </ul>
