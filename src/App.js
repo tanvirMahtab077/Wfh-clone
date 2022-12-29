@@ -6,6 +6,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./components/rootLayout/RootLayout";
+import BeAVolunteer from "./pages/getInvolved/beAvolunteer/BeAVolunteer";
+import MakeDonation from "./pages/getInvolved/makeDonation/MakeDonation";
 import Home from "./pages/home/Home";
 import Awards from "./pages/awards/Awards";
 import MediaCoverage from "./pages/mediaCoverage/MediaCoverage";
@@ -31,6 +33,8 @@ const router = createBrowserRouter(
       <Route path='/dlsh' element={<Dlsh />} />
       <Route path="/our-awards" element={<Awards />}></Route>
       <Route path="/media-coverage" element={<MediaCoverage />}></Route>
+      <Route path='/make-a-donation' element={<MakeDonation />} />
+      <Route path='/be-a-volunteer' element={<BeAVolunteer />} />
     </Route>
   )
 );

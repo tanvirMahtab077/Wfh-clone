@@ -222,6 +222,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Make A Donation"}
                                         linkClass={"after:hidden"}
+                                        href={"make-a-donation"}
                                     />
                                     <NavItem
                                         className={
@@ -229,6 +230,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Be A Volunteer"}
                                         linkClass={"after:hidden"}
+                                        href={"be-a-volunteer"}
                                     />
                                     <NavItem
                                         className={
