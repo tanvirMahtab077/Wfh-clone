@@ -4,7 +4,7 @@ import { BsFillPlayCircleFill } from 'react-icons/bs'
 const DiscoverBanner = () => {
     return (
         <div className='my-20'>
-            <div className='py-16 h-screen lg:h-[160%] w-auto'
+            <div className='py-1 lg:py-16 h-screen lg:h-[160%] w-auto'
                 style={{
                     background: "url('assets/images/banner/discover-banner.jpg')",
                     backgroundSize: "cover",

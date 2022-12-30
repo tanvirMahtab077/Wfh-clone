@@ -9,7 +9,7 @@ const Announcement = () => {
     const [hide, sethide] = useState(true)
     const handleFocus = () => {
         const zoomClass = 'w-full h-full scale-125 duration-1000'
-        const backgroundClass = 'bg-black bg-opacity-60 w-[457px] lg:w-[499px] h-[305px] lg:h-[332px] z-10 duration-1000 absolute cursor-pointer overflow-hidden'
+        const backgroundClass = 'bg-black bg-opacity-60 w-[367px] lg:w-[499px] h-[245px] lg:h-[332px] z-10 duration-1000 absolute cursor-pointer overflow-hidden'
         const iconClass = 'w-10 h-10 mx-auto mt-[140px] text-white font-bold'
         setBackground(backgroundClass)
         setZoom(zoomClass)
@@ -18,7 +18,7 @@ const Announcement = () => {
 
     }
     const handleHover = () => {
-        const bakcgrounClasses = 'w-[457px] lg:w-[499px] h-[305px] lg:h-[332px] absolute overflow-hidden'
+        const bakcgrounClasses = 'w-[367px] lg:w-[499px] h-[245px] lg:h-[332px] absolute overflow-hidden'
         const iconClass = 'hidden'
         const zoomClass = 'w-full h-full scale-100 duration-1000'
         setZoom(zoomClass)
