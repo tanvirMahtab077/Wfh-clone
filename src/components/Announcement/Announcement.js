@@ -28,7 +28,7 @@ const Announcement = () => {
     }
     return (
         <div className='flex flex-col lg:flex-row justify-center lg:p-10 p-3'>
-            <div class="lg:w-[700px]">
+            <div className="lg:w-[700px]">
                 <div className='border-l-2 h-16 border-blue-600 my-6'>
                     <h1 className='text-xl pl-2 b2 text-blue-600'>Non-Profit Organization In Bangladesh</h1>
                     <h2 className='text-2xl pl-2 font-bold pb-4'>WORKS FOR HUMANITY FOUNDATION</h2>
@@ -46,7 +46,7 @@ const Announcement = () => {
             </div>
             <div className='w-auto lg:w-[500px] my-10 lg:ml-6'>
                 <h2 className='text-xl font-bold'>ANNOUNCEMENT</h2>
-                <div class="border-b-2 w-14 my-4 border-blue-600 ..."></div>
+                <div className="border-b-2 w-14 my-4 border-blue-600 ..."></div>
                 <div className='border hover:shadow-lg'>
                     <div onMouseEnter={handleFocus} onMouseLeave={handleHover}>
                         <div className={background}><BsPlusCircle className={icon} hidden={hide} /></div>

@@ -7,7 +7,7 @@ const BlogSideBar = ({ className }) => {
     <div className={`font-pop px-5 lg:px-0 mt-6 lg:mt-0 ${className}`}>
       <div className="">
         <p className="text-lg text-primary mb-2">Search</p>
-        <form className="relative inline-block flex items-center justify-center gap-x-2">
+        <form className="relative flex items-center justify-center gap-x-2">
           <input className="py-2.5 px-2 pr-3 outline-0 border-[1px] border-black/40 focus:border-primary text-[#55555] w-[70%] linear duration-300" />
           <PrimaryButton className={"py-3.5 !font-semibold"}>
             Search
@@ -45,7 +45,7 @@ const BlogSideBar = ({ className }) => {
         </div>
 
         <div className="mt-16">
-          <form className="relative inline-block lg:mr-14 flex lg:block">
+          <form className="relative inline-block lg:mr-14 lg:block">
             <input
               className="py-2 px-2 pr-3 outline-0 border-[1px] border-black/20 focus:border-primary text-[#55555] w-[70%] lg:w-[110%] linear duration-300"
               placeholder="Search"
