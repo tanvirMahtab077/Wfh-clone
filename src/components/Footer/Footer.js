@@ -36,7 +36,7 @@ const Footer = () => {
               </p>
               <p className="py-3 flex duration-500 hover:text-[#0097FA]">
                 <BsFillEnvelopeFill className="mr-1 mt-1" />
-                <a href="#"> info@wfhbd.org</a>
+                <a href="#/"> info@wfhbd.org</a>
               </p>
             </div>
           </div>
@@ -48,19 +48,19 @@ const Footer = () => {
             <div className="border-b-2 mb-4 w-16 border-[#0097FA]"></div>
             <div className="text-white">
               <p className="py-3 duration-500 hover:text-[#0097FA]">
-                <a href="#"> FAQ</a>
+                <a href="#/"> FAQ</a>
               </p>
               <p className="duration-500 hover:text-[#0097FA]">
-                <a href="#"> Press & Media</a>
+                <a href="#/"> Press & Media</a>
               </p>
               <p className="py-3 duration-500 hover:text-[#0097FA]">
-                <a href="#"> Careers</a>
+                <a href="#/"> Careers</a>
               </p>
               <p className="duration-500 hover:text-[#0097FA]">
-                <a href="#"> Contact Us</a>
+                <a href="#/"> Contact Us</a>
               </p>
               <p className="py-3 duration-500 hover:text-[#0097FA]">
-                <a href="#"> Privacy Policy</a>
+                <a href="#/"> Privacy Policy</a>
               </p>
             </div>
           </div>

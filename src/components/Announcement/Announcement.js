@@ -20,12 +20,12 @@ const Announcement = () => {
                 <h2 className='text-xl font-bold'>ANNOUNCEMENT</h2>
                 <div class="border-b-2 w-14 my-4 border-blue-600 ..."></div>
                 <div className='border announce-box'>
-                <div className='overflow-hidden cursor-pointer'><img className='love-img scale-100 duration-500 ease-in-out hover:scale-150' src={love} alt="love" /></div>
-                <div className='p-4'>
-                <p className='text-gray-500 font-bold pt-4 text-center'><a className="hover:border-b border-black"href="">Announcement</a> , <a className="hover:border-b border-black" href="">DLSH</a> <span className="bg-cyan-600 w-[10px] h-[2px] inline-block mt-[3px] mb-[3px] ml-[6px] mr-[6px]"></span><span>March 1, 2022</span> </p>
-                    <h2 className='text-xl my-4 text-center font-bold'><a href="">ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন</a></h2>
-                    <p className='text-center text-l text-gray-500 leading-8'><a href="">ভালোবাসা দিবসে যেখানে সবাই তাদের পরিবার পরিজন,প্রিয় মানুষের সাথে ভালোবাসা দিবস উদযাপন করে সেখানে সমাজ কথিত সুবিধাবঞ্চিত পথশিশু সবার মাঝে খুশি ছড়িয়ে দিতে দিনব্যাপী নানা কার্যক্রমের মাধ্যমে বিশ্বসাহিত্য কেন্দ্রে ভালোবাসা দিবস উদযাপন করেছে ওয়ার্কস ফর হিউম্যানিটি ফাউন্ডেশন। ভালোবাসা শুধু ভালোবাসার মানুষটির জন্য নয়, বরং পরিবারবিহীন মানুষদেরও রয়েছে ভালোবাসা পাওয়ার অধিকার; এই ধারণা প্রেক্ষিতে  ২০১৮ সাল […]</a></p>
-                </div>
+                    <div className='overflow-hidden cursor-pointer'><img className='love-img scale-100 duration-500 ease-in-out hover:scale-150' src={love} alt="love" /></div>
+                    <div className='p-4'>
+                        <p className='text-gray-500 font-bold pt-4 text-center'><a className="hover:border-b border-black" href="#/">Announcement</a> , <a className="hover:border-b border-black" href="#/">DLSH</a> <span className="bg-cyan-600 w-[10px] h-[2px] inline-block mt-[3px] mb-[3px] ml-[6px] mr-[6px]"></span><span>March 1, 2022</span> </p>
+                        <h2 className='text-xl my-4 text-center font-bold'><a href="#/">ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন</a></h2>
+                        <p className='text-center text-l text-gray-500 leading-8'><a href="#/">ভালোবাসা দিবসে যেখানে সবাই তাদের পরিবার পরিজন,প্রিয় মানুষের সাথে ভালোবাসা দিবস উদযাপন করে সেখানে সমাজ কথিত সুবিধাবঞ্চিত পথশিশু সবার মাঝে খুশি ছড়িয়ে দিতে দিনব্যাপী নানা কার্যক্রমের মাধ্যমে বিশ্বসাহিত্য কেন্দ্রে ভালোবাসা দিবস উদযাপন করেছে ওয়ার্কস ফর হিউম্যানিটি ফাউন্ডেশন। ভালোবাসা শুধু ভালোবাসার মানুষটির জন্য নয়, বরং পরিবারবিহীন মানুষদেরও রয়েছে ভালোবাসা পাওয়ার অধিকার; এই ধারণা প্রেক্ষিতে  ২০১৮ সাল […]</a></p>
+                    </div>
                 </div>
             </div>
         </div>

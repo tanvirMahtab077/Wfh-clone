@@ -1,6 +1,5 @@
 import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import Button from "../layouts/button/Button";
 import Image from "../layouts/image/Image";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
@@ -21,7 +20,7 @@ const BlogCardSingle = ({
         <p className="mt-3">
           <a
             className="text-sm font-semibold text-primary/60 hover:text-primary  linear duration-300"
-            href="#"
+            href="#/"
           >
             {topicDate}
           </a>

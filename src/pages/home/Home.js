@@ -7,6 +7,7 @@ import PartnerSlider from "../../components/PartnerSlider/PartnerSlider";
 import BlogSlider from "../../components/BlogSlider/BlogSlider";
 import '../../pages/home/Home.css';
 import DiscoverBanner from '../../components/discoverBanner/DiscoverBanner';
+import HelpBanner from '../../components/helpBanner/HelpBanner';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Banner />
       <DonationCards></DonationCards>
       <Announcement></Announcement>
+      <HelpBanner />
       <ActivitySlider />
       <DiscoverBanner />
       <PartnerSlider />

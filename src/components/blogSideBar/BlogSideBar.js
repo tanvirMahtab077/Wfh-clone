@@ -21,12 +21,12 @@ const BlogSideBar = ({ className }) => {
         </h4>
         <div className="font-sans text-primary flex flex-col gap-y-4 text-sm w-[90%]">
           <p className="hover:text-blueTxt linear duration-300">
-            <a href="#">
+            <a href="#/">
               ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন
             </a>
           </p>
           <p className="hover:text-blueTxt linear duration-300">
-            <a href="#">Donate Love, Spread Happiness 2022</a>
+            <a href="#/">Donate Love, Spread Happiness 2022</a>
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const BlogSideBar = ({ className }) => {
         </h4>
         <div className="font-sans text-primary flex flex-col gap-y-4 ">
           <p className="text-primary/70 hover:text-blueTxt text-sm linear duration-300 ml-9">
-            <a href="#" className="">
+            <a href="#/" className="">
               Anonymous on 4
             </a>
           </p>
@@ -62,7 +62,7 @@ const BlogSideBar = ({ className }) => {
           <div className="font-sans text-primary flex flex-col gap-y-4  w-[90%]">
             <div>
               <p className="hover:text-blueTxt linear duration-300">
-                <a href="#">
+                <a href="#/">
                   ভালোবাসা দিবসে পথশিশুদের পাশে ওয়ার্কস ফর হিউমিনিটি ফাউন্ডেশন
                 </a>
               </p>
@@ -71,7 +71,7 @@ const BlogSideBar = ({ className }) => {
 
             <div>
               <p className="hover:text-blueTxt linear duration-300">
-                <a href="#">Donate Love, Spread Happiness 2022</a>
+                <a href="#/">Donate Love, Spread Happiness 2022</a>
               </p>
               <p className="text-primary/40 text-xs mt-2 mb-1">March 1 2022</p>
             </div>
