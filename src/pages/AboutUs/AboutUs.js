@@ -1,14 +1,22 @@
 import React from 'react';
-import Mission from '../Mission/Mission';
-import ReachPresence from '../ReachPresence/ReachPresence';
+import AboutSlider from '../../components/AboutSlider/AboutSlider';
+import Frequently from '../../components/Frequently/Frequently';
+import Mission from '../../components/Mission/Mission';
+import ReachPresence from '../../components/ReachPresence/ReachPresence';
 import Vision from '../Vision/Vision';
+
+
+
 
 const AboutUs = () => {
     return (
         <div className="mx-24">
-            <Mission></Mission>
-           <Vision></Vision>
-           <ReachPresence></ReachPresence>
+           
+         <Mission/>
+     <Vision></Vision>
+         <ReachPresence/>
+         <AboutSlider/>
+         <Frequently/>
         </div>
     );
 };

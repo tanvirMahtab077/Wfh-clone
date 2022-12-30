@@ -44,7 +44,7 @@ const PartnerSlider = () => {
                     <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
+                    <img className='z-1 h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />

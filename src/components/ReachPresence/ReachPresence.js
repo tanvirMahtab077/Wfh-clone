@@ -6,7 +6,7 @@ import {FiMapPin } from "react-icons/fi";
 
 const ReachPresence = () => {
     return (
-        <div id='mission' className='my-12'>
+        <div id='mission' className='my-24'>
             <div className='grid sm-grid-cols-1 gap-8 lg:grid-cols-2'>
                 <div className='flex'>
                     <div className="border-l-2 border-[#0097FA] h-10"></div>
