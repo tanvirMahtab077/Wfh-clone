@@ -19,6 +19,7 @@ import EmergencyResponse from "./pages/Program/EmergencyResponse";
 import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Vision from "./pages/Vision/Vision";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
