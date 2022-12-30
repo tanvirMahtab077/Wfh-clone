@@ -1,5 +1,6 @@
 import React from 'react';
 import visionImg from '../../Assests/Imgs/vission.jpg';
+import { BiCaretRight } from "react-icons/bi";
 
 const Vision = () => {
     return (
@@ -7,8 +8,11 @@ const Vision = () => {
             <div className='py-12 pr-2 bg-[#F4F5F9]'>
                 <div className='grid sm-grid-cols-1 gap-8 lg:grid-cols-2'>
                     <div className='relative'>
-                        <div className='absolute mt-24 ml-48'>
-                            <button className='text-white text-2xl'>howkjlsd</button>
+                        <div className='absolute mt-36 ml-60'>
+                            <div class="rounded-full flex p-4 outline-1 shadow-lg relative bg-[#FFFFFF] m-3">
+                          <a href="https://www.youtube.com/watch?v=LajtLm8FCEw&ab_channel=WFHFoundation"> <BiCaretRight className='text-[#0097FA] text-2xl shadow-lg hove:duration-50'/></a>
+                            </div>
+                          
                         </div>
                         <img src={visionImg} alt="mission-img" />
 
