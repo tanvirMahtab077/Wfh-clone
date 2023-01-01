@@ -21,6 +21,15 @@ import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import NotFound from "./components/notFound/NotFound";
 import WinterClothes from "./pages/projectsBlogs/WinterClothes";
+import CycloneRelief from "./pages/projectsBlogs/CycloneRelief";
+import TheyRead from "./pages/projectsBlogs/TheyRead";
+import HealthCamp from "./pages/projectsBlogs/HealthCamp";
+import ApplicationPage from "./pages/projectsBlogs/ApplicationPage";
+import BusinessCard from "./pages/projectsBlogs/BusinessCard";
+import MobileWeatherApp from "./pages/projectsBlogs/MobileWeatherApp";
+import LowPolySocial from "./pages/projectsBlogs/LowPolySocial";
+import SpecialBikes from "./pages/projectsBlogs/SpecialBikes";
+import ModeratsElo from "./pages/projectsBlogs/ModeratsElo";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +49,15 @@ const router = createBrowserRouter(
       <Route path="/make-a-donation" element={<MakeDonation />}></Route>
       <Route path="/be-a-volunteer" element={<BeAVolunteer />}></Route>
       <Route path="/portfolio/winter-clothes-distribution/" element={<WinterClothes />}></Route>
+      <Route path="portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/" element={<CycloneRelief />}></Route>
+      <Route path="/portfolio/they-read-they-build/" element={<TheyRead />}></Route>
+      <Route path="/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/" element={<HealthCamp />}></Route>
+      <Route path="/portfolio/application-mobile/" element={<ApplicationPage />}></Route>
+      <Route path="/portfolio/mobile-weather-app/" element={<MobileWeatherApp />}></Route>
+      <Route path="/portfolio/business-card/" element={<BusinessCard />}></Route>
+      <Route path="/portfolio/lowpoly-social/" element={<LowPolySocial />}></Route>
+      <Route path="/portfolio/special-bikes/" element={<SpecialBikes />}></Route>
+      <Route path="/portfolio/moderats-eloquenti/" element={<ModeratsElo />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>
   )

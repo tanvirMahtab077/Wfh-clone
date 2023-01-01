@@ -7,6 +7,8 @@ import winter2 from '../../Assests/Imgs/winter2.jpg'
 import winter3 from '../../Assests/Imgs/winter3.jpg'
 import winter4 from '../../Assests/Imgs/winter4.jpg'
 import winter5 from '../../Assests/Imgs/winter5.jpg'
+import PostsNavButton from '../../components/postsNavButton/PostsNavButton';
+import { HiOutlineChevronLeft } from 'react-icons/hi';
 
 const WinterClothes = () => {
     const header = "Winter Clothes Distribution"
@@ -25,7 +27,7 @@ const WinterClothes = () => {
                 description3={description3}
                 sector={"Emergency Response"}
                 beneficiary={"400 People"}
-                date={"12 July, 2026"}
+                date={"July 2, 2016"}
                 location={"Kurigram, Bangladesh"}
             >
                 <div>
@@ -40,7 +42,11 @@ const WinterClothes = () => {
                         <img className='w-auto h-full object-cover' src={winter5} alt="" />
                     </div>
                     <p>In this winter season WFH Foundation distributed 400 Blanket and winter clothes to most needy widow, Disable, & senior citizens.</p>
-                    <p>The beneficiaries after receiving warm blanket and winter clothes extended great thanks to Donors and WFH Foundation for their kind support and saving the life in severe coldness.</p>
+                    <p className='mb-10'>The beneficiaries after receiving warm blanket and winter clothes extended great thanks to Donors and WFH Foundation for their kind support and saving the life in severe coldness.</p>
+                    <hr className='py-5' />
+                    <div className='float-left'>
+                        <PostsNavButton link={"/portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/"}><HiOutlineChevronLeft /> Previous Post</PostsNavButton>
+                    </div>
                 </div>
             </ProjectBlogLayout>
         </div>
