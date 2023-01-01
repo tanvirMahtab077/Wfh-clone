@@ -46,16 +46,16 @@ const EmergencyResponse = () => {
                     <ProjectCard
                         portfolio={portfolio.portfolio2}
                         badge={badge}
-                        title={title.title1}
-                        description={description.description1}
-                        link={link.link1}
+                        title={title.title2}
+                        description={description.description2}
+                        link={link.link2}
                     />
                     <ProjectCard
                         portfolio={portfolio.portfolio1}
                         badge={badge}
-                        title={title.title2}
-                        description={description.description2}
-                        link={link.link2}
+                        title={title.title1}
+                        description={description.description1}
+                        link={link.link1}
                     />
                 </div>
             </div>

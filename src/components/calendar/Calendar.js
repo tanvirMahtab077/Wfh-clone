@@ -1,13 +1,16 @@
 import React from 'react'
 
 const Calendar = () => {
-  return (
-    <div className="py-8 lg:ml-10">
-        <h2 className='text-1xl font-bold mb-7'>CALENDAR</h2>
+    return (
+        <div className="py-8 lg:ml-10">
+            <h4 className="mt-6 font-semibold text-xl text-primary">
+                Calender
+            </h4>
+            <div className="border-b-2 mb-4 mt-2 w-24 border-[#0097FA]"></div>
             <div className="border border-1">
                 <div className="md:p-8 p-5 bg-white">
                     <div className="px-4 text-center">
-                        <span  tabindex="0" className="focus:outline-none  text-base font-bold text-gray-800">December 2022</span>
+                        <span tabindex="0" className="focus:outline-none  text-base font-bold text-gray-800">December 2022</span>
                         {/* <div className="flex items-center">
                             <button aria-label="calendar backward" className="focus:text-gray-400 hover:text-gray-400 text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -261,7 +264,7 @@ const Calendar = () => {
                 </div> */}
             </div>
         </div>
-  )
+    )
 }
 
 export default Calendar

@@ -20,6 +20,7 @@ import EmergencyResponse from "./pages/Program/EmergencyResponse";
 import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import NotFound from "./components/notFound/NotFound";
+import WinterClothes from "./pages/projectsBlogs/WinterClothes";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
       <Route path="/media-coverage" element={<MediaCoverage />}></Route>
       <Route path="/make-a-donation" element={<MakeDonation />}></Route>
       <Route path="/be-a-volunteer" element={<BeAVolunteer />}></Route>
+      <Route path="/portfolio/winter-clothes-distribution/" element={<WinterClothes />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>
   )
