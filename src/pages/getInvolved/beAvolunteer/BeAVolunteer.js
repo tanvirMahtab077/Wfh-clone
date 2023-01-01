@@ -15,7 +15,7 @@ const BeAVolunteer = () => {
             <div className='flex flex-col lg:flex-row justify-center my-20 lg:mb-40 lg:mx-40 mx-5'>
                 <div className='mb-14 lg:mb-5 lg:mr-8 lg:mt-8'>
                     <div className='flex items-center mb-5 lg:w-[600px]'>
-                        <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-12 lg:py-8  bg-[#0097FA] mr-3'></span>
+                        <span className='ring-1 ring-t-0 border-r-0 border-b-0 border-[#0097FA] py-12 lg:py-8  bg-[#0097FA] mr-3'></span>
                         <div className=''>
                             <h1 className='text-[#0097FA] text-xl mb-2'>Help Us To Spread Happiness Over The World</h1>
                             <h1 className='font-bold text-2xl lg:text-3xl font-sans'>Volunteer Opportunities</h1>
@@ -114,28 +114,85 @@ const BeAVolunteer = () => {
                         <h1 className='text-2xl lg:text-4xl font-bold text-white text-center'>Volunteer Registration Form</h1>
                     </div>
                     <div>
-                        <div className='bg-[#0097fa] w-full bg-opacity-[0.15] rounded p-5'>
-                            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center'>
+                        <div className='bg-[#0097fa] w-full bg-opacity-[0.05] rounded-3xl p-5'>
+                            <form onSubmit={handleSubmit(onSubmit)} className=''>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="fullName">Full Name<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="text" placeholder="Full Name" {...register("fullName", { required: true, maxLength: 80 })} />
+                                    <label className='cursor-pointer' htmlFor="fullName">Full Name<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400'
+                                        type="text"
+                                        placeholder="E.g. Md. Abu Khalid"
+                                        id='fullName'
+                                        {...register("fullName", {
+                                            required: {
+                                                value: true,
+                                                message: 'Name is Required'
+                                            }, maxLength: 30
+                                        })} />
+                                    <label className="label">
+                                        {errors.fullName?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.fullName.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="email">Email Address<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
+                                    <label className='cursor-pointer' htmlFor="email">Email Address<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input
+                                        id='email'
+                                        type="email"
+                                        placeholder="E.g. khalid@wfhbd.org"
+                                        className="p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400"
+                                        {...register("email", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is required. Please input a valid email.'
+                                            },
+                                            pattern: {
+                                                value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                                message: 'Provide a valid Email'
+                                            }
+                                        })}
+                                    />
+                                    <label className="label">
+                                        {errors.email?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.email.message}</span>}
+                                        {errors.email?.type === 'pattern' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.email.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="phoneNumber">Phone Number<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="tel" placeholder="Phone Number" {...register("phoneNumber", { required: true })} />
+                                    <label className='cursor-pointer' htmlFor="phoneNumber">Phone Number<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400'
+                                        type="tel"
+                                        placeholder="E.g. 01816656455"
+                                        id='phoneNumber'
+                                        {...register("phoneNumber", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is required. Please input a Phone number.'
+                                            }, maxLength: 13
+                                        })} />
+                                    <label className="label">
+                                        {errors.phoneNumber?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.phoneNumber.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="dateOfBirth">Date Of Birth<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="date" placeholder="Date Of Birth" {...register("dateOfBirth", { required: true })} />
+                                    <label className='cursor-pointer' htmlFor="dob">Date of Birth<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none bg-white'
+                                        type="date"
+                                        name="dob"
+                                        id="dob"
+                                        {...register("dob", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is Required.'
+                                            }
+                                        })} />
+                                    <label className="label">
+                                        {errors.dob?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.dob.message}</span>}
+                                    </label>
                                 </div>
-                                <div className='flext items-center justify-between'>
-                                    <span className='flex flex-col'>
-                                        <label htmlFor="bloodGroup">Blood Group</label>
-                                        <select {...register("bloodGroup", {})}>
+                                <div className='flex lg:justify-between'>
+                                    <span className='flex flex-col w-1/2 mr-10'>
+                                        <label className='cursor-pointer' htmlFor="bloodGroup">Blood Group</label>
+                                        <select
+                                            className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400 bg-white'
+                                            {...register("bloodGroup", {})}>
                                             <option value="A+">A+</option>
                                             <option value="A-">A-</option>
                                             <option value="B+">B+</option>
@@ -146,59 +203,165 @@ const BeAVolunteer = () => {
                                             <option value="AB-">AB-</option>
                                         </select>
                                     </span>
-                                    <span className='flex flex-col'>
-                                        <label htmlFor="ableToDonate">Able To Donate</label>
+                                    <span className='flex flex-col lg:mr-10'>
+                                        <label className='cursor-pointer' htmlFor="ableToDonate">Able To Donate</label>
                                         <div className='flex items-center gap-x-2'>
-                                            <input {...register("ablteToDonate", { required: true })} type="radio" value="Yes" />Yes
-                                            <input {...register("ablteToDonate", { required: true })} type="radio" value="No" />No
+                                            <input className='border border-[#17a8e3] rounded-full checked:border-[5px] w-5 h-5 cursor-pointer appearance-none' {...register("ableToDonate", {})} type="radio" value="Yes" />Yes
+                                            <input className='border border-[#17a8e3] rounded-full checked:border-[5px] w-5 h-5 cursor-pointer appearance-none' {...register("ableToDonate", {})} type="radio" value="No" />No
                                         </div>
                                     </span>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="address">Street Address<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="text" placeholder="Street Address" {...register("address", { required: true })} />
+                                    <label className='cursor-pointer' htmlFor="address">Street Address<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400'
+                                        type="text"
+                                        placeholder="E.g. 23/3 Jhigatola, Dhaka 1209"
+                                        id='address'
+                                        {...register("address", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is required. Please enter the street address.'
+                                            }, maxLength: 50
+                                        })} />
+                                    <label className="label">
+                                        {errors.address?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.address.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="district">District<span className='text-red-700 font-semibold'>*</span></label>
-                                    <select {...register("district", { required: true })}>
-                                        <option value="Mr">Dhaka</option>
-                                        <option value="Mrs">Mrs</option>
-                                        <option value="Miss">Miss</option>
-                                        <option value="Dr">Dr</option>
+                                    <label className='cursor-pointer' htmlFor="district">District<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select
+                                        className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400 bg-white'
+                                        {...register("district", { required: true })}>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Bagerhat">Bagerhat</option>
+                                        <option value="Bandarban">Bandarban</option>
+                                        <option value="Barguna">Barguna</option>
+                                        <option value="Barisal">Barisal</option>
+                                        <option value="Bhola">Bhola</option>
+                                        <option value="Bogra">Bogra</option>
+                                        <option value="Brahmanbaria">Brahmanbaria</option>
+                                        <option value="Chandpur">Chandpur</option>
+                                        <option value="Chittagong">Chittagong</option>
+                                        <option value="Chuadanga">Chuadanga</option>
+                                        <option value="Comilla">Comilla</option>
+                                        <option value="Cox'sBazar">Cox'sBazar</option>
+                                        <option value="Dinajpur">Dinajpur</option>
+                                        <option value="Faridpur">Faridpur</option>
+                                        <option value="Feni">Feni</option>
+                                        <option value="Gaibandha">Gaibandha</option>
+                                        <option value="Gazipur">Gazipur</option>
+                                        <option value="Gopalganj">Gopalganj</option>
+                                        <option value="Habiganj">Habiganj</option>
+                                        <option value="Jaipurhat">Jaipurhat</option>
+                                        <option value="Jamalpur">Jamalpur</option>
+                                        <option value="Jessore">Jessore</option>
+                                        <option value="Jhalokati">Jhalokati</option>
+                                        <option value="Jhenaidah">Jhenaidah</option>
+                                        <option value="Khagrachari">Khagrachari</option>
+                                        <option value="Khulna">Khulna</option>
+                                        <option value="Kishoreganj">Kishoreganj</option>
+                                        <option value="Kurigram">Kurigram</option>
+                                        <option value="Kushtia">Kushtia</option>
+                                        <option value="Lakshmipur">Lakshmipur</option>
+                                        <option value="Lalmonirhat">Lalmonirhat</option>
+                                        <option value="Madaripur">Madaripur</option>
+                                        <option value="Magura">Magura</option>
+                                        <option value="Manikganj">Manikganj</option>
+                                        <option value="Maulvibazar">Maulvibazar</option>
+                                        <option value="Meherpur">Meherpur</option>
+                                        <option value="Munshiganj">Munshiganj</option>
+                                        <option value="Mymensingh">Mymensingh</option>
+                                        <option value="Naogaon">Naogaon</option>
+                                        <option value="Narail">Narail</option>
+                                        <option value="Narayanganj">Narayanganj</option>
+                                        <option value="Narsingdi">Narsingdi</option>
+                                        <option value="Natore">Natore</option>
+                                        <option value="Nawabganj">Nawabganj</option>
+                                        <option value="Netrokona">Netrokona</option>
+                                        <option value="Nilphamari">Nilphamari</option>
+                                        <option value="Noakhali">Noakhali</option>
+                                        <option value="Pabna">Pabna</option>
+                                        <option value="Panchagarh">Panchagarh</option>
+                                        <option value="Patuakhali">Patuakhali</option>
+                                        <option value="Pirojpur">Pirojpur</option>
+                                        <option value="Rajbari">Rajbari</option>
+                                        <option value="Rajshahi">Rajshahi</option>
+                                        <option value="Rangamati">Rangamati</option>
+                                        <option value="Rangpur">Rangpur</option>
+                                        <option value="Satkhira">Satkhira</option>
+                                        <option value="Shariatpur">Shariatpur</option>
+                                        <option value="Sherpur">Sherpur</option>
+                                        <option value="Sirajganj">Sirajganj</option>
+                                        <option value="Sunamganj">Sunamganj</option>
+                                        <option value="Sylhet">Sylhet</option>
+                                        <option value="Tangail">Tangail</option>
+                                        <option value="Thakurgaon">Thakurgaon</option>
                                     </select>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="education">Educational Qualification (Mention the Subject/Group)<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="text" placeholder="Education" {...register("education", { required: true })} />
+                                    <label className='cursor-pointer' htmlFor="education">Educational Qualification (Mention the Subject/Group)<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400'
+                                        type="text"
+                                        placeholder="E.g. BBA, 2nd Semester"
+                                        id='education'
+                                        {...register("education", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is required. Please enter text.'
+                                            }, maxLength: 50
+                                        })} />
+                                    <label className="label">
+                                        {errors.education?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.education.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="profession">Profession<span className='text-red-700 font-semibold'>*</span></label>
-                                    <select {...register("profession", { required: true })}>
-                                        <option value="Mr">Student</option>
-                                        <option value="Mrs">Mrs</option>
-                                        <option value="Miss">Miss</option>
-                                        <option value="Dr">Dr</option>
+                                    <label className='cursor-pointer' htmlFor="profession">Profession<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select
+                                        className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400 bg-white'
+                                        {...register("profession", { required: true })}>
+                                        <option value="Student">Student</option>
+                                        <option value="Service Holder">Service Holder</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Enterpreneur">Enterpreneur</option>
+                                        <option value="Social Worker">Social Worker</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="otherOrg">Involvement With Any Other Organization?<span className='text-red-700 font-semibold'>*</span></label>
-                                    <select {...register("otherOrg", { required: true })}>
+                                    <label className='cursor-pointer' htmlFor="otherOrg">Involvement With Any Other Organization?<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select
+                                        className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400 bg-white'
+                                        {...register("otherOrg", { required: true })}>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="facebookLink">Facebook Profile Link<span className='text-red-700 font-semibold'>*</span></label>
-                                    <input type="text" placeholder="Facebook Profile Link" {...register("facebookLink", { required: true })} />
+                                    <label className='cursor-pointer' htmlFor="facebookLink">Facebook Profile Link<span className='text-red-700 font-semibold'>*</span></label>
+                                    <input className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400'
+                                        type="text"
+                                        placeholder="E.g. www.facebook.com/wfhbd"
+                                        id='facebookLink'
+                                        {...register("facebookLink", {
+                                            required: {
+                                                value: true,
+                                                message: 'This field is required. Please enter text.'
+                                            }, maxLength: 50
+                                        })} />
+                                    <label className="label">
+                                        {errors.facebookLink?.type === 'required' && <span className="label-text-alt text-[#E04562] bg-[#F9E4E8] block px-3 py-2 my-2 text-xs font-normal font-sans">{errors.facebookLink.message}</span>}
+                                    </label>
                                 </div>
                                 <div className='flex flex-col w-full font-pop text-sm my-3'>
-                                    <label htmlFor="volunteerType">Volunteer Type<span className='text-red-700 font-semibold'>*</span></label>
-                                    <select {...register("volunteerType", { required: true })}>
+                                    <label className='cursor-pointer' htmlFor="volunteerType">Volunteer Type<span className='text-red-700 font-semibold'>*</span></label>
+                                    <select
+                                        className='w-full p-2 ring-1 ring-[#0097fa] focus:outline-none rounded-sm transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none required:ring-red-400 bg-white'
+                                        {...register("volunteerType", { required: true })}>
                                         <option value="offline">Offline</option>
                                         <option value="online">Online</option>
                                     </select>
                                 </div>
-                                <input type="submit" />
+                                <input className='btn text-white bg-[#17A8E3] py-2 px-6 rounded-sm right-0 font-medium font-pop text-sm mb-10 mt-5 cursor-pointer hover:bg-[#008FCA] duration-200 drop-shadow-md' type="submit" value='SUBMIT' />
                             </form>
                         </div>
                     </div>
