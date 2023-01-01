@@ -19,12 +19,9 @@ import EducationProgram from "./pages/Program/EducationProgram";
 import EmergencyResponse from "./pages/Program/EmergencyResponse";
 import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
-<<<<<<< HEAD
 import NotFound from "./components/notFound/NotFound";
-=======
 import Contact from "./pages/Contact/Contact";
 
->>>>>>> c1d7043 (Syed Mehedi)
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -43,11 +40,8 @@ const router = createBrowserRouter(
       <Route path="/media-coverage" element={<MediaCoverage />}></Route>
       <Route path="/make-a-donation" element={<MakeDonation />}></Route>
       <Route path="/be-a-volunteer" element={<BeAVolunteer />}></Route>
-<<<<<<< HEAD
       <Route path="*" element={<NotFound />}></Route>
-=======
       <Route path='contact-us' element={<Contact></Contact>}></Route>
->>>>>>> c1d7043 (Syed Mehedi)
     </Route>
   )
 );
