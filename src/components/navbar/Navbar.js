@@ -90,6 +90,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Mission"}
                                         linkClass={"after:hidden"}
+                                        href="about-us"
                                       
                                     />
                                     <NavItem
@@ -98,7 +99,7 @@ const Navbar = () => {
                                         }
                                         linkName={"Vision"}
                                         linkClass={"after:hidden"}
-                                        href="vision"
+                                        href="about-us/#vision"
                                     />
                                     <NavItem
                                         className={

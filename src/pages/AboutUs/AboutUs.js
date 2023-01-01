@@ -10,7 +10,7 @@ import Vision from '../Vision/Vision';
 
 const AboutUs = () => {
     return (
-        <div className="mx-24">
+        <div className="lg:mx-24 mx-12">
            
          <Mission/>
      <Vision></Vision>
