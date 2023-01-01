@@ -13,7 +13,7 @@ import logo from "../../Assests/Imgs/logo-white.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#484848] w-[100%] mt-24">
+    <div className="bg-[#484848] w-[100%]">
       <div className="mx-24 py-14">
         <div className="grid sm-grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div>
