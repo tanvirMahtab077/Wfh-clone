@@ -10,62 +10,64 @@ import DropdownBox from "../dropdownBox/DropdownBox";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
-    const [hamOpen, setHamOpen] = useState(true);
-    const [searchFocus, setSearchFocus] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [hamOpen, setHamOpen] = useState(true);
+  const [searchFocus, setSearchFocus] = useState(false);
 
-    const handleNavItems = () => {
-        setOpen(!open);
-        setHamOpen(!hamOpen);
+  const handleNavItems = () => {
+    setOpen(!open);
+    setHamOpen(!hamOpen);
+  };
+
+  useEffect(() => {
+    window.innerWidth >= 1024 && setOpen(true);
+    const screenResize = () => {
+      window.innerWidth >= 1024 ? setOpen(true) : setOpen(false);
     };
+    window.addEventListener("resize", screenResize);
+  }, []);
 
-    useEffect(() => {
-        window.innerWidth >= 1024 && setOpen(true);
-        const screenResize = () => {
-            window.innerWidth >= 1024 ? setOpen(true) : setOpen(false);
-        };
-        window.addEventListener("resize", screenResize);
-    }, []);
-
-    return (
-        <>
-            <div className="bg-white font-pop text-[15px] text-primary">
-                <div
-                    className={`max-w-container mx-auto flex py-2.5 md:py-4 px-3 md:px-4 xl:px-0 items-center gap-y-7 justify-between ${open ? "" : ""
-                        }`}
-                >
-                    {hamOpen ? (
-                        <VscThreeBars
-                            className="lg:hidden text-blueTxt text-3xl ml-1 md:text-3xl cursor-pointer z-20"
-                            onClick={handleNavItems}
-                        />
-                    ) : (
-                        <CgClose
-                            className="text-blueTxt lg:hidden text-3xl ml-1 md:text-3xl font-bold cursor-pointer z-20"
-                            onClick={handleNavItems}
-                        />
-                    )}
-                    <div className="w-1/2 lg:w-1/5 flex justify-center lg:justify-start items-center ml-[20vw] lg:ml-0">
-                        <Link to="/">
-                            <Image src={"assets/images/logo.png"} />
-                        </Link>
-                    </div>
-                    <div className="lg:w-4/5 flex justify-end">
-                        <form className="relative inline-block lg:mr-14 lg:block justify-end">
-                            <input
-                                className="py-2 px-2 pr-3 outline-0 border-[1px] border-black-30 focus:border-primary text-[#55555] w-[70%] focus:w-[100%] lg:w-[100%] lg:focus:w-[126%] linear duration-300"
-                                placeholder="Search..."
-                                onClick={() => setSearchFocus(!searchFocus)}
-                                onBlur={() => setSearchFocus(!searchFocus)}
-                            />
-                            <BiSearch
-                                className={`text-2xl absolute top-2 right-[8px] lg:right-[-43px] cursor-pointer linear duration-300 hover:text-blueTxt ${searchFocus && "text-blueTxt"
-                                    }`}
-                            />
-                        </form>
-                    </div>
-                </div>
-            </div>
+  return (
+    <>
+      <div className="sticky lg:static top-0 left-0 bg-white font-pop text-[15px] text-primary z-[99999]">
+        <div
+          className={`max-w-container mx-auto flex py-3 md:py-4 px-3 md:px-4 xl:px-0 items-center gap-y-7 justify-between ${
+            open ? "" : ""
+          }`}
+        >
+          {hamOpen ? (
+            <VscThreeBars
+              className="lg:hidden text-blueTxt text-3xl ml-1 md:text-3xl cursor-pointer"
+              onClick={handleNavItems}
+            />
+          ) : (
+            <CgClose
+              className="text-blueTxt lg:hidden text-3xl ml-1 md:text-3xl font-bold cursor-pointer"
+              onClick={handleNavItems}
+            />
+          )}
+          <div className="w-1/2 lg:w-1/5 flex justify-center lg:justify-start items-center ml-[20vw] lg:ml-0">
+            <Link to="/">
+              <Image src={"assets/images/logo.png"} />
+            </Link>
+          </div>
+          <div className="lg:w-4/5 flex justify-end">
+            <form className="relative inline-block lg:mr-14 flex lg:block justify-end">
+              <input
+                className="py-1.5 lg:py-2 px-2 pr-3 text-[15px] outline-0 border-[1px] border-black-30 focus:border-primary text-[#55555] w-[70%] focus:w-[90%] lg:w-[100%] lg:focus:w-[126%] linear duration-300"
+                placeholder="Search"
+                onClick={() => setSearchFocus(!searchFocus)}
+                onBlur={() => setSearchFocus(!searchFocus)}
+              />
+              <BiSearch
+                className={`text-[16px] lg:text-2xl absolute top-[11px] lg:top-2 right-[8px] lg:right-[-43px] cursor-pointer linear duration-300 hover:text-blueTxt ${
+                  searchFocus && "text-blueTxt"
+                }`}
+              />
+            </form>
+          </div>
+        </div>
+      </div>
 
             <nav
                 className={`${open
