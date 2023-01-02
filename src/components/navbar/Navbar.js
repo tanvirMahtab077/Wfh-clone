@@ -78,7 +78,7 @@ const Navbar = () => {
             <ul className="lg:h-[4.8vw] cursor-pointer list-none flex flex-col lg:flex-row items-start lg:items-center gap-4 md:gap-7 lg:gap-10 xl:gap-12 linear duration-300 my-6 md:my-9 lg:my-0">
               <NavItem href={"/"} linkName={"HOME"} className={""} />
               <NavItem
-                href={"#"}
+                href={"about-us"}
                 linkName={"ABOUT US"}
                 className={""}
                 Arrow={IoIosArrowDown}
@@ -90,6 +90,7 @@ const Navbar = () => {
                     }
                     linkName={"Mission"}
                     linkClass={"after:hidden"}
+                    href={"about-us/#mission"}
                   />
                   <NavItem
                     className={
@@ -97,6 +98,7 @@ const Navbar = () => {
                     }
                     linkName={"Vision"}
                     linkClass={"after:hidden"}
+                    href={"about-us/#vision"}
                   />
                   <NavItem
                     className={
