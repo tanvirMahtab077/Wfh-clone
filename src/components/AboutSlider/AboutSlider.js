@@ -21,92 +21,92 @@ const AboutSlider = () => {
         slidesPerView: 4
     }
     return (
-        <div className="bg-[url('/src/Assests/Imgs/mapbg.png')] py-20">
+        <div className="bg-[url('/src/Assests/Imgs/mapbg.png')] py-20 mx-3 lg:mx-44">
             <div className='p-8 bg-[#0097FA] mt-10 mb-5 relative after:content:"" before:content:"" before:table after:table after:border-[12px] after:border-solid after:border-transparent after:border-t-[#0097FA] after:absolute after:-bottom-6 after:left-1/2 after:-ml-3 after:z-10'>
                 <h1 className='text-4xl font-bold text-white text-center'>Partners</h1>
             </div>
             <Slider data={data}>
                 <SwiperSlide>
-                  <div>
                     <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={yb} alt="" />
-                   
-                    </div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={cri} alt="" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                 <div>
-                 <div>
-                 <img className='h-[70px] w-[180px] cursor-pointer my-10' src={apon} alt="" />
-                    </div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={tribeni} alt="" />
-                    </div>
-                 </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div>
                         <div>
-                        <img className='h-[70px] w-[180px] cursor-pointer my-10' src={shh} alt="" />
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={yb} alt="" />
+
                         </div>
-                    <div>
-                        <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
-                    </div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={yb} alt="" />
-                   
-                    </div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={cri} alt="" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div>
-                 <div>
-                 <img className='h-[70px] w-[180px] cursor-pointer my-10' src={apon} alt="" />
-                    </div>
-                    <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={tribeni} alt="" />
-                    </div>
-                 </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div>
                         <div>
-                        <img className='h-[70px] w-[180px] cursor-pointer my-10' src={shh} alt="" />
-                        </div>
-                    <div>
-                        <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={cri} alt="" />
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div>
                     <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={apon} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={tribeni} alt="" />
+                        </div>
                     </div>
+                </SwiperSlide>
+                <SwiperSlide>
                     <div>
-                    <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={shh} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
+                        </div>
                     </div>
-                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={yb} alt="" />
+
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={cri} alt="" />
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={apon} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={tribeni} alt="" />
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={shh} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={ibr} alt="" />
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={canvas} alt="" />
+                        </div>
+                        <div>
+                            <img className='h-[70px] w-[180px] cursor-pointer my-10' src={eshikhon} alt="" />
+                        </div>
+                    </div>
                 </SwiperSlide>
             </Slider>
             <div className='flex items-center flex-col'>

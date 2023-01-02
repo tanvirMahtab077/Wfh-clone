@@ -4,17 +4,17 @@ import { BiCaretRight } from "react-icons/bi";
 
 const Vision = () => {
     return (
-        <div className='my-48'>
+        <div className='mx-3 lg:mx-44 my-48'>
             <div className='py-12 pr-2 bg-[#F4F5F9]'>
                 <div className='grid sm-grid-cols-1 gap-8 lg:grid-cols-2'>
                     <div className='relative'>
                         <div className='absolute lg:mt-36 lg:ml-60 mt-24 ml-40'>
                             <div className='hover:cursor-pointer hover:scale-75 duration-500 rounded-full border-8 border-white border-opacity-40'>
-                            <div className="rounded-full flex relative p-2 bg-white">
-                          <a href="https://www.youtube.com/watch?v=LajtLm8FCEw&ab_channel=WFHFoundation"> <BiCaretRight className='text-[#0097FA] lg:text-5xl text-2xl rounded-full'/></a>
+                                <div className="rounded-full flex relative p-2 bg-white">
+                                    <a href="https://www.youtube.com/watch?v=LajtLm8FCEw&ab_channel=WFHFoundation"> <BiCaretRight className='text-[#0097FA] lg:text-5xl text-2xl rounded-full' /></a>
+                                </div>
                             </div>
-                            </div>
-                          
+
                         </div>
                         <img src={visionImg} alt="mission-img" />
 

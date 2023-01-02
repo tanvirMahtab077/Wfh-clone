@@ -20,6 +20,8 @@ import EmergencyResponse from "./pages/Program/EmergencyResponse";
 import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import NotFound from "./components/notFound/NotFound";
+import Contact from "./pages/Contact/Contact";
+
 import AboutUs from "./pages/AboutUs/AboutUs";
 
 
@@ -35,7 +37,7 @@ const router = createBrowserRouter(
       <Route path='/emergency-response' element={<EmergencyResponse />} />
       <Route path='/project-tribeni' element={<ProjectTribeni />} />
       <Route path='/dlsh' element={<Dlsh />} />
-      <Route path="/about-us" element={<AboutUs/>}></Route>
+      <Route path="/about-us" element={<AboutUs />}></Route>
       <Route path="/wfh-blogs" element={<Blog />}></Route>
       <Route path="/all-projects" element={<AllProjects />}></Route>
       <Route path="/education-program" element={<EducationProgram />}></Route>
@@ -49,6 +51,7 @@ const router = createBrowserRouter(
       <Route path="/make-a-donation" element={<MakeDonation />}></Route>
       <Route path="/be-a-volunteer" element={<BeAVolunteer />}></Route>
       <Route path="*" element={<NotFound />}></Route>
+      <Route path='contact-us' element={<Contact></Contact>}></Route>
     </Route>
   )
 );
