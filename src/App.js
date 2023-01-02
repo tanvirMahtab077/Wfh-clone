@@ -20,6 +20,10 @@ import EmergencyResponse from "./pages/Program/EmergencyResponse";
 import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import NotFound from "./components/notFound/NotFound";
+import Contact from "./pages/Contact/Contact";
+
+import AboutUs from "./pages/AboutUs/AboutUs";
+
 import WinterClothes from "./pages/projectsBlogs/WinterClothes";
 import CycloneRelief from "./pages/projectsBlogs/CycloneRelief";
 import TheyRead from "./pages/projectsBlogs/TheyRead";
@@ -36,6 +40,14 @@ const router = createBrowserRouter(
     //routes
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />}></Route>
+      <Route path='/all-projects' element={<AllProjects />} />
+      <Route path='/education-program' element={<EducationProgram />} />
+      <Route path='/health-program' element={<HealthProgram />} />
+      <Route path='/awareness-program' element={<AwarenessProgram />} />
+      <Route path='/emergency-response' element={<EmergencyResponse />} />
+      <Route path='/project-tribeni' element={<ProjectTribeni />} />
+      <Route path='/dlsh' element={<Dlsh />} />
+      <Route path="/about-us" element={<AboutUs />}></Route>
       <Route path="/wfh-blogs" element={<Blog />}></Route>
       <Route path="/all-projects" element={<AllProjects />}></Route>
       <Route path="/education-program" element={<EducationProgram />}></Route>
@@ -58,6 +70,7 @@ const router = createBrowserRouter(
       <Route path="/portfolio/lowpoly-social/" element={<LowPolySocial />}></Route>
       <Route path="/portfolio/special-bikes/" element={<SpecialBikes />}></Route>
       <Route path="/portfolio/moderats-eloquenti/" element={<ModeratsElo />}></Route>
+      <Route path='contact-us' element={<Contact></Contact>}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>
   )
