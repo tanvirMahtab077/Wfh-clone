@@ -6,7 +6,7 @@ import { GiProgression } from 'react-icons/gi'
 const SideStat = ({ statHead, statTitle, statDescription }) => {
     return (
         <div>
-            <div className='mb-20 lg:flex items-center justify-between'>
+            <div className='mb-20 lg:flex items-center'>
                 <div className='mb-14 lg:mb-5'>
                     <div className='flex items-center mb-5'>
                         <span className='border border-t-0 border-r-0 border-b-0 border-[#0097FA] py-7 lg:py-6  bg-[#0097FA] mr-3'></span>
@@ -17,7 +17,7 @@ const SideStat = ({ statHead, statTitle, statDescription }) => {
                     </div>
                     <p className='text-sm text-zinc-400 lg:w-[680px]'>{statDescription}</p>
                 </div>
-                <div className='mr-28'>
+                <div className='lg:ml-28'>
                     <div className='text-[#fec501] font-semibold text-2xl flex items-center mb-10'>
                         <VscSmiley className='w-14 h-14' />
                         <span className='border border-t-0 border-r-0 border-b-0 border-black py-7 mx-3  bg-black opacity-10'></span>
