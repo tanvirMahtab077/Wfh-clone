@@ -13,6 +13,8 @@ const SingleBlogRead = ({
   paraFour,
   paraFive,
   className,
+  blogImgPathSec,
+  imgLabel
 }) => {
   return (
     <div className={`px-5 lg:px-0 font-pop ${className}`}>
@@ -29,8 +31,8 @@ const SingleBlogRead = ({
       </h3>
       <Image src={blogImgPath} imgClass={"w-full"} />
       <p className="text-justify mt-7 leading-7 text-primary/70">{paraOne}</p>
-      <Image src={blogImgPath} imgClass={"w-5/6 lg:w-3/5 m-auto mt-9"} />
-      <p className="text-center mt-2 text-primary/70">DLSH 2019 – Narsingdi</p>
+      <Image src={blogImgPathSec} imgClass={"w-5/6 lg:w-4/5 m-auto mt-9"} />
+      <p className="text-center mt-2 text-primary/70">{imgLabel}</p>
       <p className="text-justify mt-7 leading-7 text-primary/70 text-base">
         {paraTwo}
       </p>

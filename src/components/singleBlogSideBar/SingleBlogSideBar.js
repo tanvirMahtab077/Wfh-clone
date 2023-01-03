@@ -14,6 +14,26 @@ const SingleBlogSideBar = ({ className }) => {
           </PrimaryButton>
         </form>
       </div>
+
+      {/* Category */}
+      <h4 className="mt-6 font-semibold text-xl text-primary">CATEGORY</h4>
+      <div className="border-b-2 mb-4 mt-2 w-16 border-[#0097FA]"></div>
+      <div className="font-sans text-primary font-semibold flex flex-col gap-y-4  w-[90%]">
+        <div className="flex justify-between border-b-[1px] border-secondary/20 py-2">
+          <p className="hover:text-blueTxt linear duration-300">
+            <a href="#/">Announcement </a>
+          </p>
+          <p className="text-primary/40 text-xs mt-2 mb-1">(2)</p>
+        </div>
+
+        <div className="flex justify-between border-b-[1px] border-secondary/20 py-2">
+          <p className="hover:text-blueTxt linear duration-300">
+            <a href="#/">DLSH</a>
+          </p>
+          <p className="text-primary/40 text-xs mt-2 mb-1">(2)</p>
+        </div>
+      </div>
+
       {/* Recent Posts */}
       <div className="">
         <h4 className="mb-4 mt-10 font-semibold text-2xl text-primary">
@@ -58,7 +78,7 @@ const SingleBlogSideBar = ({ className }) => {
           <h4 className="mt-6 font-semibold text-xl text-primary">
             Recent Posts
           </h4>
-          <div className="border-b-2 mb-4 mt-2 w-24 border-[#0097FA]"></div>
+          <div className="border-b-2 mb-4 mt-2 w-16 border-[#0097FA]"></div>
           <div className="font-sans text-primary flex flex-col gap-y-4  w-[90%]">
             <div>
               <p className="hover:text-blueTxt linear duration-300">
@@ -78,11 +98,30 @@ const SingleBlogSideBar = ({ className }) => {
           </div>
         </div>
 
+        {/* ARCHIVES */}
+        <h4 className="mt-8 font-semibold text-xl text-primary">ARCHIVES</h4>
+        <div className="border-b-2 mb-4 mt-2 w-16 border-[#0097FA]"></div>
+        <div className="font-sans text-primary font-semibold flex flex-col gap-y-4  w-[90%]">
+          <div className="flex justify-between border-b-[1px] border-secondary/20 py-2">
+            <p className="hover:text-blueTxt linear duration-300">
+              <a href="#/">March 2022 </a>
+            </p>
+            <p className="text-primary/40 text-xs mt-2 mb-1">(2)</p>
+          </div>
+
+          <div className="flex justify-between border-b-[1px] border-secondary/20 py-2">
+            <p className="hover:text-blueTxt linear duration-300">
+              <a href="#/">January 2022</a>
+            </p>
+            <p className="text-primary/40 text-xs mt-2 mb-1">(2)</p>
+          </div>
+        </div>
+
         <div className="">
           <h4 className="mt-10 font-semibold text-xl text-primary">
             SIGN UP FOR NEWSLETTER
           </h4>
-          <div className="border-b-2 mb-4 mt-2 w-24 border-[#0097FA]"></div>
+          <div className="border-b-2 mb-4 mt-2 w-16 border-[#0097FA]"></div>
         </div>
       </div>
     </div>

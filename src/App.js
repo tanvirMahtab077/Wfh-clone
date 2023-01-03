@@ -49,8 +49,12 @@ const router = createBrowserRouter(
       <Route path="/about-us" element={<AboutUs />}></Route>
       <Route path="/wfh-blogs" element={<Blog />}></Route>
       <Route
+        path="/wfh-blogs/ভালোবাসা-দিবসে-পথশিশুদের-পাশে-ওয়ার্কস-ফর-হিউমিনিটি-ফাউন্ডেশন"
+        element={<SingleBlogPage blogID={"1"} />}
+      ></Route>
+      <Route
         path="/wfh-blogs/donate-love-spread-happiness-2022"
-        element={<SingleBlogPage />}
+        element={<SingleBlogPage blogID={"2"} />}
       ></Route>
       <Route path="/all-projects" element={<AllProjects />}></Route>
       <Route path="/education-program" element={<EducationProgram />}></Route>
