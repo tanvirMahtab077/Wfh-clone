@@ -4,7 +4,7 @@ import { BiCaretRight } from "react-icons/bi";
 
 const Mission = () => {
   return (
-    <div id="mission" className="my-16 px-4 max-w-container mx-auto ">
+    <div id="mission" className="my-16 px-4 lg:px-0 max-w-container mx-auto ">
       <div className="grid sm-grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex">
           <div className="border-l-2 border-[#0097FA] h-9"></div>

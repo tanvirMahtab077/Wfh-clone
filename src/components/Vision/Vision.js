@@ -4,7 +4,7 @@ import { BiCaretRight } from "react-icons/bi";
 
 const Vision = () => {
   return (
-    <div id="vision" className="px-4  my-16 max-w-container mx-auto ">
+    <div id="vision" className="px-4 lg:px-0 my-16 max-w-container mx-auto ">
       <div className="py-12 pr-2 bg-[#F4F5F9]">
         <div className="grid sm-grid-cols-1 gap-10 lg:grid-cols-2">
           <div className="relative">

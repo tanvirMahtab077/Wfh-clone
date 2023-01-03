@@ -7,7 +7,7 @@ import { BsPeople } from "react-icons/bs";
 
 const ReachPresense = ({ statHead, statTitle, statDescription }) => {
   return (
-    <div id="reach" className="px-4 my-16 max-w-container mx-auto">
+    <div id="reach" className="px-4 lg:px-0 my-16 max-w-container mx-auto">
       <div className="mb-20 lg:flex items-center">
         <div className="mb-14 lg:mb-5 mr-14">
           <div className="flex items-center mb-5">

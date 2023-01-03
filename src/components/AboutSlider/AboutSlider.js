@@ -23,7 +23,7 @@ const PartnerSlider = () => {
     return (
       <div
         id="partners"
-        className="bg-[url('/src/Assests/Imgs/mapbg.png')] py-20 px-4 my-16 max-w-container mx-auto"
+        className="bg-[url('/src/Assests/Imgs/mapbg.png')] py-20 px-4 lg:px-0 my-16 max-w-container mx-auto"
       >
         <div className='p-8 bg-[#0097FA] mt-10 mb-5 relative after:content:"" before:content:"" before:table after:table after:border-[12px] after:border-solid after:border-transparent after:border-t-[#0097FA] after:absolute after:-bottom-6 after:left-1/2 after:-ml-3 after:z-10'>
           <h1 className="text-4xl font-bold text-white text-center">
