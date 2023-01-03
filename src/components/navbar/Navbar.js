@@ -31,8 +31,9 @@ const Navbar = () => {
     <>
       <div className="sticky lg:static top-0 left-0 bg-white font-pop text-[15px] text-primary z-[99999]">
         <div
-          className={`max-w-container mx-auto flex py-3 md:py-4 px-3 md:px-4 xl:px-0 items-center gap-y-7 justify-between ${open ? "" : ""
-            }`}
+          className={`max-w-container mx-auto flex py-3 md:py-4 px-3 md:px-4 xl:px-0 items-center gap-y-7 justify-between ${
+            open ? "" : ""
+          }`}
         >
           {hamOpen ? (
             <VscThreeBars
@@ -47,7 +48,7 @@ const Navbar = () => {
           )}
           <div className="w-1/2 lg:w-1/5 flex justify-center lg:justify-start items-center ml-[20vw] lg:ml-0">
             <Link to="/">
-              <Image src={"assets/images/logo.png"} />
+              <Image src={"/assets/images/logo.png"} />
             </Link>
           </div>
           <div className="lg:w-4/5 flex justify-end">
@@ -59,8 +60,9 @@ const Navbar = () => {
                 onBlur={() => setSearchFocus(!searchFocus)}
               />
               <BiSearch
-                className={`text-[16px] lg:text-2xl absolute top-[11px] lg:top-2 right-[8px] lg:right-[-43px] cursor-pointer linear duration-300 hover:text-blueTxt ${searchFocus && "text-blueTxt"
-                  }`}
+                className={`text-[16px] lg:text-2xl absolute top-[11px] lg:top-2 right-[8px] lg:right-[-43px] cursor-pointer linear duration-300 hover:text-blueTxt ${
+                  searchFocus && "text-blueTxt"
+                }`}
               />
             </form>
           </div>
@@ -68,10 +70,11 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`${open
-          ? "animate-[slideX_.4s_ease_1] lg:!animate-none"
-          : "translate-x-[-100%] lg:translate-x-[0%]"
-          } bg-white lg:bg-primary w-[70vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:sticky top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-[9999] pt-11 lg:pt-0`}
+        className={`${
+          open
+            ? "animate-[slideX_.4s_ease_1] lg:!animate-none"
+            : "translate-x-[-100%] lg:translate-x-[0%]"
+        } bg-white lg:bg-primary w-[70vw] md:w-[33vw] lg:w-full h-screen lg:h-auto fixed lg:sticky top-0 linear duration-300 border-r-[1px] lg:border-r-[0px] border-solid border-black/20 font-pop text-sm text-white font-semibold !text-black lg:!text-white active:!text-blueTxt shadow-lg z-[9999] pt-11 lg:pt-0`}
       >
         <div className="lg:max-w-container mx-auto flex flex-col lg:flex-row px-3 xl:px-0 relative">
           <div className="w-full linear duration-300 lg:flex lg:justify-between items-center pl-2 lg:pl-0">
@@ -106,6 +109,7 @@ const Navbar = () => {
                     }
                     linkName={"Partners"}
                     linkClass={"after:hidden"}
+                    href={"about-us/#partners"}
                   />
                   <NavItem
                     className={
@@ -113,6 +117,7 @@ const Navbar = () => {
                     }
                     linkName={"Reach & Presence"}
                     linkClass={"after:hidden"}
+                    href={"about-us/#reach"}
                   />
                   <NavItem
                     className={
@@ -278,7 +283,11 @@ const Navbar = () => {
                 className={""}
                 href={"wfh-blogs"}
               />
-              <NavItem href={"contact-us"} linkName={"CONTACT"} className={""} />
+              <NavItem
+                href={"contact-us"}
+                linkName={"CONTACT"}
+                className={""}
+              />
             </ul>
             <Button
               className="lg:h-full w-[40vw] lg:flex items-center justify-center text-center text-base px-3 lg:px-6 py-3 lg:py-0 bg-white text-blueTxt lg:text-blueTxt/70 hover:text-blueTxt lg:w-auto mb-4 lg:mb-0 mx-auto lg:mx-0 border-[1px] lg:border-[0px] border-solid border-primary"
