@@ -29,7 +29,7 @@ module.exports = {
           "100%": { opacity: "1", transform: "translateY(0%)" },
         },
         popDownY: {
-          "0%": { opacity: "0", transform: "translateY(-20%)" },
+          "0%": { opacity: "0", transform: "translateY(-15%)" },
           "100%": { opacity: "1", transform: "translateY(0%)" },
         },
         slideX: {

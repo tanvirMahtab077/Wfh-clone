@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-;
-
-const PrimaryButton = ({ children}) => {
-
- return (
-        
-        <button className = "uppercase text-white font-bold  bg-black text-xs py-2 px-6 my-4 rounded-lg bg-opacity-20  hover:bg-[#616569] duration-500 flex items-center">{children}</button>
-    );
+const PrimaryButton = ({ children, className }) => {
+  return (
+    <button
+      className={`uppercase text-white font-bold bg-[#0097FA] text-xs py-2 px-6 rounded-lg hover:bg-[#006bb3] duration-500 flex items-center ${className}`}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default PrimaryButton;
