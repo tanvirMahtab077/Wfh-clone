@@ -21,9 +21,7 @@ import HealthProgram from "./pages/Program/HealthProgram";
 import ProjectTribeni from "./pages/Program/ProjectTribeni";
 import NotFound from "./components/notFound/NotFound";
 import Contact from "./pages/Contact/Contact";
-
 import AboutUs from "./pages/AboutUs/AboutUs";
-
 import WinterClothes from "./pages/projectsBlogs/WinterClothes";
 import CycloneRelief from "./pages/projectsBlogs/CycloneRelief";
 import TheyRead from "./pages/projectsBlogs/TheyRead";
@@ -34,21 +32,26 @@ import MobileWeatherApp from "./pages/projectsBlogs/MobileWeatherApp";
 import LowPolySocial from "./pages/projectsBlogs/LowPolySocial";
 import SpecialBikes from "./pages/projectsBlogs/SpecialBikes";
 import ModeratsElo from "./pages/projectsBlogs/ModeratsElo";
+import SingleBlogPage from "./pages/singleBlogPage/SingleBlogPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     //routes
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />}></Route>
-      <Route path='/all-projects' element={<AllProjects />} />
-      <Route path='/education-program' element={<EducationProgram />} />
-      <Route path='/health-program' element={<HealthProgram />} />
-      <Route path='/awareness-program' element={<AwarenessProgram />} />
-      <Route path='/emergency-response' element={<EmergencyResponse />} />
-      <Route path='/project-tribeni' element={<ProjectTribeni />} />
-      <Route path='/dlsh' element={<Dlsh />} />
+      <Route path="/all-projects" element={<AllProjects />} />
+      <Route path="/education-program" element={<EducationProgram />} />
+      <Route path="/health-program" element={<HealthProgram />} />
+      <Route path="/awareness-program" element={<AwarenessProgram />} />
+      <Route path="/emergency-response" element={<EmergencyResponse />} />
+      <Route path="/project-tribeni" element={<ProjectTribeni />} />
+      <Route path="/dlsh" element={<Dlsh />} />
       <Route path="/about-us" element={<AboutUs />}></Route>
       <Route path="/wfh-blogs" element={<Blog />}></Route>
+      <Route
+        path="/wfh-blogs/donate-love-spread-happiness-2022"
+        element={<SingleBlogPage />}
+      ></Route>
       <Route path="/all-projects" element={<AllProjects />}></Route>
       <Route path="/education-program" element={<EducationProgram />}></Route>
       <Route path="/health-program" element={<HealthProgram />}></Route>
@@ -60,17 +63,47 @@ const router = createBrowserRouter(
       <Route path="/media-coverage" element={<MediaCoverage />}></Route>
       <Route path="/make-a-donation" element={<MakeDonation />}></Route>
       <Route path="/be-a-volunteer" element={<BeAVolunteer />}></Route>
-      <Route path="/portfolio/winter-clothes-distribution/" element={<WinterClothes />}></Route>
-      <Route path="portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/" element={<CycloneRelief />}></Route>
-      <Route path="/portfolio/they-read-they-build/" element={<TheyRead />}></Route>
-      <Route path="/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/" element={<HealthCamp />}></Route>
-      <Route path="/portfolio/application-mobile/" element={<ApplicationPage />}></Route>
-      <Route path="/portfolio/mobile-weather-app/" element={<MobileWeatherApp />}></Route>
-      <Route path="/portfolio/business-card/" element={<BusinessCard />}></Route>
-      <Route path="/portfolio/lowpoly-social/" element={<LowPolySocial />}></Route>
-      <Route path="/portfolio/special-bikes/" element={<SpecialBikes />}></Route>
-      <Route path="/portfolio/moderats-eloquenti/" element={<ModeratsElo />}></Route>
-      <Route path='contact-us' element={<Contact></Contact>}></Route>
+      <Route
+        path="/portfolio/winter-clothes-distribution/"
+        element={<WinterClothes />}
+      ></Route>
+      <Route
+        path="portfolio/distribute-relief-to-cyclone-roanu-affected-coastal-people/"
+        element={<CycloneRelief />}
+      ></Route>
+      <Route
+        path="/portfolio/they-read-they-build/"
+        element={<TheyRead />}
+      ></Route>
+      <Route
+        path="/portfolio/health-camp-medicine-educational-equipment-for-flood-victim-children/"
+        element={<HealthCamp />}
+      ></Route>
+      <Route
+        path="/portfolio/application-mobile/"
+        element={<ApplicationPage />}
+      ></Route>
+      <Route
+        path="/portfolio/mobile-weather-app/"
+        element={<MobileWeatherApp />}
+      ></Route>
+      <Route
+        path="/portfolio/business-card/"
+        element={<BusinessCard />}
+      ></Route>
+      <Route
+        path="/portfolio/lowpoly-social/"
+        element={<LowPolySocial />}
+      ></Route>
+      <Route
+        path="/portfolio/special-bikes/"
+        element={<SpecialBikes />}
+      ></Route>
+      <Route
+        path="/portfolio/moderats-eloquenti/"
+        element={<ModeratsElo />}
+      ></Route>
+      <Route path="contact-us" element={<Contact></Contact>}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>
   )

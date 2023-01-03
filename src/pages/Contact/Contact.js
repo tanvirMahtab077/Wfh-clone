@@ -42,7 +42,7 @@ const Contact = () => {
           ></textarea>
 
           <div className="flex justify-center mt-2">
-            <button className="py-2 px-4 bg-primary text-white font-semibold rounded-full mb-5 hover:bg-black mt-3">
+            <button className="py-2 px-4 bg-primary text-white font-semibold rounded-full mb-5 hover:bg-[#003457] mt-3 linear duration-300">
               SEND MESSAGE
             </button>
           </div>
