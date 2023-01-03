@@ -14,7 +14,7 @@ import logo from "../../Assests/Imgs/logo-white.png";
 const Footer = () => {
   return (
     <div className="bg-[#484848] w-[100%]">
-      <div className="my-16 px-4 max-w-container mx-auto py-14">
+      <div className="px-4 max-w-container mx-auto py-14">
         <div className="grid sm-grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <h2 className="text-[#0097FA] text-xl pb-2 font-medium">
