@@ -10,7 +10,7 @@ const HeroBanner = ({ header }) => {
           {header}
         </h1>
         <p className="text-xs lg:text-base mt-2 text-white opacity-80">
-          <Link to="/" className="hover:text-blueTxt  linear duration-300">
+          <Link to="/" className="hover:text-blueTxt linear duration-300">
             Home
           </Link>{" "}
           / {header}
