@@ -35,26 +35,8 @@ const SingleBlogRead = ({
         {paraTwo}
       </p>
       <p className="text-justify mt-3 leading-7 text-primary/70">{paraThree}</p>
-      <p className="text-justify mt-3 leading-7 text-primary/70">
-        <br /> অনুদান পাঠানোর মাধ্যমঃ
-        <br />
-        <br /> বিকাশঃ +8801816-656455 (personal) +8801746-921283 (personal)
-        +8801794-013834 (personal)
-        <br /> রকেটঃ 01746921283-6
-        <br /> নগদঃ 01746921283
-        <br /> ব্যাংকঃ A/C NAME: MOHAMMAD ABU KHALID199.151.0058567
-        (DBBL)Branch: Uttara Sonargaon Janapath. SWIFT: DBBLBDDHROUTING:
-        090264656
-      </p>
-      <p className="text-justify mt-3 leading-7 text-primary/70">
-        <br />
-        রেজিস্ট্রেশনের শেষ সময় ১০ফেব্রুয়ারি, ২০২২।
-        <br /> যেকোন প্রয়োজনে যোগাযোগঃ
-        <br /> +8801816-656455/ 01746921283
-        <br /> “Donate Love, Spread Happiness”
-        <br />
-        <br /> #wfhfoundation #DLSH
-      </p>
+      <p className="text-justify mt-3 leading-7 text-primary/70">{paraFour}</p>
+      <p className="text-justify mt-3 leading-7 text-primary/70">{paraFive}</p>
 
       <p className="text-xl font-semibold mt-10 leading-7 text-primary">
         Leave A Reply
@@ -63,7 +45,7 @@ const SingleBlogRead = ({
         Your email address will not be published. Required fields are marked *
       </p>
 
-      <div className="flex flex-col">
+      <form className="flex flex-col" action="" method="">
         <label className="mb-1 text-[13px] text-primary/80">COMMENT*</label>
         <textarea
           name=""
@@ -106,7 +88,7 @@ const SingleBlogRead = ({
             <MdOutlineKeyboardArrowRight className="font-bold text-[22px]" />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
