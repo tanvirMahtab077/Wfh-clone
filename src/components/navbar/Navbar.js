@@ -37,12 +37,12 @@ const Navbar = () => {
         >
           {hamOpen ? (
             <VscThreeBars
-              className="lg:hidden text-blueTxt text-3xl ml-1 md:text-3xl cursor-pointer"
+              className="lg:hidden text-blueTxt text-[42px] ml-1 md:text-4xl cursor-pointer"
               onClick={handleNavItems}
             />
           ) : (
             <CgClose
-              className="text-blueTxt lg:hidden text-3xl ml-1 md:text-3xl font-bold cursor-pointer"
+              className="text-blueTxt lg:hidden text-[42px] ml-1 md:text-4xl font-bold cursor-pointer"
               onClick={handleNavItems}
             />
           )}
