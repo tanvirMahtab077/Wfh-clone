@@ -1,4 +1,6 @@
 import React from "react";
+import { BsChevronRight } from "react-icons/bs";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Image from "../layouts/image/Image";
 
@@ -87,22 +89,22 @@ const SingleBlogRead = ({
           id=""
           cols="30"
           rows="8"
-          className="border-solid border-[1px] border-secondary/30 rounded-md focus:border-primary linear duration-300 px-5 py-4 w-full outline-0 mb-6"
+          className="border-solid border-[1px] border-secondary/30 focus:border-primary linear duration-300 px-4 py-3 w-full outline-0 mb-6"
         ></textarea>
         <label className="mb-1 text-[13px] text-primary/80">NAME*</label>
         <input
           type="email"
-          className="border-solid border-[1px] border-secondary/30 rounded-md focus:border-primary linear duration-300 px-5 py-4 w-full outline-0 mb-6"
+          className="border-solid border-[1px] border-secondary/30 focus:border-primary linear duration-300 px-4 py-3 w-full outline-0 mb-6"
         />
         <label className="mb-1 text-[13px] text-primary/80">EMAIL*</label>
         <input
           type="text"
-          className="border-solid border-[1px] border-secondary/30 rounded-md focus:border-primary linear duration-300 px-5 py-4 w-full outline-0 mb-6"
+          className="border-solid border-[1px] border-secondary/30 focus:border-primary linear duration-300 px-4 py-3 w-full outline-0 mb-6"
         />
         <label className="mb-1 text-[13px] text-primary/80">WEBSITE*</label>
         <input
           type="text"
-          className="border-solid border-[1px] border-secondary/30 rounded-md focus:border-primary linear duration-300 px-5 py-4 w-full outline-0 mb-6"
+          className="border-solid border-[1px] border-secondary/30 focus:border-primary linear duration-300 px-4 py-3 w-full outline-0 mb-6"
         />
         <div className="flex gap-x-2 items-center">
           <input className="mb-1" type={"checkbox"} id={"check"} />
@@ -114,6 +116,13 @@ const SingleBlogRead = ({
         <div className="flex justify-end mt-2">
           <button className="py-3 px-4 bg-primary text-white font-semibold mb-5 hover:bg-[#006bb3] mt-3 text-sm linear duration-300">
             POST COMMENT
+          </button>
+        </div>
+
+        <div className="flex justify-end mt-2">
+          <button className="py-3 px-4 hover:bg-primary border-2 border-secondary/30 hover:border-primary text-primary/80 hover:text-white font-semibold mb-5 bg-white mt-3 text-sm linear duration-300 rounded-md flex items-center gap-x-1">
+            NEXT POST{" "}
+            <MdOutlineKeyboardArrowRight className="font-bold text-[22px]" />
           </button>
         </div>
       </div>
