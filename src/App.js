@@ -107,7 +107,7 @@ const router = createBrowserRouter(
         path="/portfolio/moderats-eloquenti/"
         element={<ModeratsElo />}
       ></Route>
-      <Route path="contact-us" element={<Contact></Contact>}></Route>
+      <Route path="/contact-us" element={<Contact />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>
   )

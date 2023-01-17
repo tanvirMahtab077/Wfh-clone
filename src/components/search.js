@@ -204,13 +204,230 @@ const search_data = [
     link: "",
     date: "January 13, 2023",
   },
+
+  // no. 73 starts (nafis)
   {
-    id: "",
+    id: "73",
     img: "",
-    title: "",
+    title: "Gallery 7",
     description: "",
-    link: "",
-    date: "January 13, 2023",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "74",
+    img: "",
+    title: "Gallery 6",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "75",
+    img: "",
+    title: "Gallery 5",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "76",
+    img: "",
+    title: "Gallery 4",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "77",
+    img: "",
+    title: "Gallery 3",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "78",
+    img: "",
+    title: "Gallery 2",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "79",
+    img: "",
+    title: "Gallery 1",
+    description: "",
+    link: "#",
+    date: "May 16, 2017",
+  },
+  {
+    id: "80",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-1-733x550.jpg",
+    title: "Application mobile",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/application-mobile/",
+    date: "March 13, 2017",
+  },
+  {
+    id: "81",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-2-733x550.jpg",
+    title: "Business card",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/business-card/",
+    date: "March 13, 2017",
+  },
+  {
+    id: "82",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-4-733x550.jpg",
+    title: "Mobile Weather App",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/mobile-weather-app/",
+    date: "March 13, 2017",
+  },
+  {
+    id: "83",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-3-733x550.jpg",
+    title: "LowPoly Social",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/lowpoly-social/",
+    date: "March 9, 2017",
+  },
+  {
+    id: "84",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-7-733x550.jpg",
+    title: "Special bikes",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/special-bikes/",
+    date: "March 9, 2017",
+  },
+  {
+    id: "85",
+    img: "https://wfhbd.org/wp-content/uploads/2017/03/portfolio-5-733x550.jpg",
+    title: "Moderats eloquenti",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "/portfolio/moderats-eloquenti/",
+    date: "March 9, 2017",
+  },
+  {
+    id: "86",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-1-500x550.jpg",
+    title: "Bird House Cuckoo Clock",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#",
+    date: "March 26, 2016",
+  },
+  {
+    id: "87",
+    img: "",
+    title: "WFH Blog",
+    description: "",
+    link: "/wfh-blogs",
+    date: "March 16, 2016",
+  },
+  {
+    id: "88",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-2-500x550.jpg",
+    title: "AJ Roman Wall Clock",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aj-roman-wall-clock/
+    date: "March 11, 2016",
+  },
+  {
+    id: "89",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-3-500x550.jpg",
+    title: "Antibes dining chair",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/antibes-dining-chair/
+    date: "March 11, 2016",
+  },
+  {
+    id: "90",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-4-500x550.jpg",
+    title: "Aroma Diffuser Jasmine",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aroma-diffuser-jasmine/
+    date: "March 11, 2016",
+  },
+  {
+    id: "91",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-2-500x550.jpg",
+    title: "Astor Slipper Chair",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aroma-diffuser-jasmine/
+    date: "March 11, 2016",
+  },
+  {
+    id: "92",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-3-500x550.jpg",
+    title: "Form Rocking Chair",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aroma-diffuser-jasmine/
+    date: "March 11, 2016",
+  },
+  {
+    id: "93",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-7-500x550.jpg",
+    title: "Lounge Sofa for Comwell natural oak wood",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aroma-diffuser-jasmine/
+    date: "March 11, 2016",
+  },
+  {
+    id: "94",
+    img: "https://wfhbd.org/wp-content/uploads/2016/03/product-4-500x550.jpg",
+    title: "Malachite Carnaby Mug",
+    description:
+      "Proin sagittis feugiat elit finibus pretium. Donec et tortor non purus vulputate tincidunt. Cras congue posuer",
+    link: "#", //https://wfhbd.org/product/aroma-diffuser-jasmine/
+    date: "March 11, 2016",
+  },
+  {
+    id: "94",
+    img: "",
+    title: "About Us",
+    description: "",
+    link: "/about-us",
+    date: "March 07, 2016",
+  },
+  {
+    id: "95",
+    img: "",
+    title: "Contact Us",
+    description: "",
+    link: "/contact-us",
+    date: "March 07, 2016",
+  },
+  {
+    id: "96",
+    img: "",
+    title: "Featured Products",
+    description: "",
+    link: "#",
+    date: "March 07, 2016",
+  },
+  {
+    id: "97",
+    img: "",
+    title: "Marble Wall Clock",
+    description:
+      "Excepteur sint occaecat cupidatat non proident sunt in culpa qui deserunt mollit anim id est laborum.",
+    link: "#", //https://wfhbd.org/product/marble-wall-clock/
+    date: "March 11, 2016",
   },
 ];
 
